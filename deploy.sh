@@ -1,10 +1,7 @@
 #!/usr/bin/env sh
 
-GITHUB_TOKEN=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
-
 # 确保脚本抛出遇到的错误
 set -e
-
 
 # 生成静态文件
 npm run build
@@ -15,21 +12,44 @@ cd docs/.vuepress/dist
 # deploy to github pages
 echo 'tommyzeng.com' > CNAME
 
+# git init
+# git add .
+# git commit -m 'deploy'
+
+
+# # 如果发布到 https://<USERNAME>.github.io/<REPO>
+# git remote add origin git@github.com:TommyZeng777/TommyZeng777.github.io.git
+# git branch -M main
+# git push -f git@github.com:TommyZeng777/TommyZeng777.github.io.git main:gh-pages
+
+# cd -
 
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='来自github actions的自动部署'
-  githubUrl=https://TommyZeng777:${GITHUB_TOKEN}@github.com/TommyZeng777/TommyZeng777.github.io.git
-  git config --global user.name "TommyZeng777"
-  git config --global user.email "tommyzeng1031@gmail.com"
-  
+  msg='deploy 脚本部署'
+  githubUrl=git@github.com:TommyTeng777/TommyTeng777.github.io.git
+  # giteeUrl=git@gitee.com:kele-bingtang/Kele-Bingtang.git
 else
-  msg='deploy'
-  githubUrl=git@github.com:TommyZeng777/TommyZeng777.github.io.git
-fi
+  msg='来自 Github actions 的自动部署'
+  githubUrl=https://Kele-Bingtang:${GITHUB_TOKEN}@github.com/TommyTeng777/TommyTeng777.github.io.git
+  git config --global user.name "TommyTeng777"
+  git config --global user.email "tommyzeng1031@gmail.com"
+# fi
+# git init
+# git add -A
+# git commit -m "${msg}"
+# git push -f $githubUrl master # 推送到github gh-pages分支
+
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master # 推送到github gh-pages分支
+git push -f $githubUrl master:gh-pages # 推送到 Github gh-pages 分支
+
+
+# 退回开始所在目录
+cd - 
+# 删除打包项目
+rm -rf docs/.vuepress/dist
+
 
 # deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
