@@ -33,7 +33,7 @@ else
   githubUrl=https://Kele-Bingtang:${GITHUB_TOKEN}@github.com/TommyTeng777/TommyTeng777.github.io.git
   git config --global user.name "TommyTeng777"
   git config --global user.email "tommyzeng1031@gmail.com"
-# fi
+fi
 # git init
 # git add -A
 # git commit -m "${msg}"
