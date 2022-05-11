@@ -26,11 +26,11 @@ echo 'tommyzeng.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy 脚本部署'
-  githubUrl=git@github.com:TommyTeng777/TommyTeng777.github.io.git
+  githubUrl=git@github.com:TommyZeng777/TommyZeng777.github.io.git
   # giteeUrl=git@gitee.com:kele-bingtang/Kele-Bingtang.git
 else
   msg='来自 Github actions 的自动部署'
-  githubUrl=https://Kele-Bingtang:${GITHUB_TOKEN}@github.com/TommyTeng777/TommyTeng777.github.io.git
+  githubUrl=https://TommyTeng777:${GITHUB_TOKEN}@github.com/TommyTeng777/TommyTeng777.github.io.git
   git config --global user.name "TommyTeng777"
   git config --global user.email "tommyzeng1031@gmail.com"
 fi
