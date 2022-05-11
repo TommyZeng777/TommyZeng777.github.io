@@ -42,7 +42,7 @@ else
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到 Github gh-pages 分支
+git push -f $githubUrl main:gh-pages # 推送到 Github gh-pages 分支
 
 
 # 退回开始所在目录
