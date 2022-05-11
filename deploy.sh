@@ -1,7 +1,10 @@
 #!/usr/bin/env sh
 
+GITHUB_TOKEN=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
+
 # 确保脚本抛出遇到的错误
 set -e
+
 
 # 生成静态文件
 npm run build
@@ -14,13 +17,14 @@ echo 'tommyzeng.com' > CNAME
 
 
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
-  githubUrl=git@github.com:TommyZeng777/TommyZeng777.github.io.git
-else
   msg='来自github actions的自动部署'
   githubUrl=https://TommyZeng777:${GITHUB_TOKEN}@github.com/TommyZeng777/TommyZeng777.github.io.git
   git config --global user.name "TommyZeng777"
   git config --global user.email "tommyzeng1031@gmail.com"
+  
+else
+  msg='deploy'
+  githubUrl=git@github.com:TommyZeng777/TommyZeng777.github.io.git
 fi
 git init
 git add -A
