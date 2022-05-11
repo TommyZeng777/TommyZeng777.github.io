@@ -1,4 +1,12 @@
 
+// 引入字体
+// @font-face {
+//     font-family: 'Fira Code';
+//     src: local('Fira Code'), local('Fira Code'), url('./font/FiraCode-VF.ttf') format('ttf');
+//     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+// }
+
+
 // 评论区颜色重置
 .gt-container
   .gt-ico-tip
@@ -70,3 +78,328 @@ body .vuepress-plugin-demo-block__wrapper
   .highlight
     color: $accentColor
     font-weight: bold
+
+// // tag栏有关控件
+// .tip-tip {
+//     padding-left: 10px;
+//     background-color rgba(52,152,219,.3);
+//     border-left 4px solid rgb(52,152,219);
+//     color: darken(rgb(52,152,219),20%);
+// }
+// .tip-success {
+//     padding-left: 10px;
+//     background-color rgba(46,204,113,.3);
+//     border-left 4px solid rgb(46,204,113);
+//     color: darken(rgb(46,204,113),20%);
+// }
+// .tip-warning {
+//     padding-left: 10px;
+//     background-color rgba(241,196,15,.3);
+//     border-left 4px solid rgb(241,196,15);
+//     color: darken(rgb(241,196,15),20%);
+// }
+// .tip-danger {
+//     padding-left: 10px;
+//     background-color rgba(231,76,60,.3);
+//     border-left 4px solid rgb(231,76,60);
+//     color: darken(rgb(231,76,60),20%);
+// } 
+
+// .tip-info {
+//     padding-left: 10px;
+//     background-color rgba(75, 214, 70, 0.3);
+//     border-left 4px solid rgb(115, 165, 102);
+//     color: darken(rgb(231,76,60),20%);
+// }
+
+
+
+// .blockquote{
+//   border-radius: 4px;
+//   }
+
+//tag栏上下边框距离调整(原版太小了,调大一点)
+.custom-block{
+    padding-top: 0.7rem!important;
+    padding-bottom: 0.7rem!important;  
+    
+}
+
+//tag栏标题与正文的距离调整
+.custom-block-title{
+    margin-bottom: 6px!important;
+      // line-height: 5!important;
+      // align-items: stretch;
+  }
+
+
+// .line-numbers-mode pre{
+//     background-color: rgb(185, 185, 185)!important;
+//     color: rgb(222, 19, 19)!important;
+//   }
+
+
+// 代码块行号
+.line-numbers-wrapper{
+  color: rgba(69, 69, 69, 0.591)!important;
+  }
+
+// 思维导图下方进度条, auto就会自动设置是否限制滚动条
+.md-mermaid{
+    overflow-x: auto!important;
+  }
+
+
+// 调整代码框上下边距用的, 默认上下边距太大
+.theme-vdoing-content pre[class*="language-"]{
+    padding-top: 0.75rem!important;
+    padding-bottom: 0.75rem!important;
+  }
+.line-numbers-wrapper{
+    padding-top: 0.75rem!important;
+    padding-bottom: 0.75rem!important;
+}
+
+
+// 代码块的样式修改, 使用阴影效果做分层
+// 前缀是分别适配亮色模式和暗色模式做的适配
+.theme-mode-light .line-numbers-mode{
+
+    border-radius: 5px!important;
+    
+    
+    // 这个是给图形添加阴影的, inset是内阴影
+    // 默认是外阴影, 可以用这个方法给内部加颜色
+    // 多个阴影效果使用 "," 号隔开
+    box-shadow: 
+      inset 0em 2.1em #eff2f3, 
+      0.7px 0.7px 5px rgba(176, 175, 175, 0.532),
+      -0.2px -0.2px 3px rgba(221, 221, 221, 0.2);
+    // box-shadow:-0.5px -0.5px 1px rgba(221, 221, 221, 0.643);
+}
+.theme-mode-dark .line-numbers-mode{
+    
+    border-radius: 5px!important;
+
+    // color: rgb(16, 16, 16)
+    
+    // 这个是给图形添加阴影的, inset是内阴影
+    // 默认是外阴影, 可以用这个方法给内部加颜色
+    // 多个阴影效果使用 "," 号隔开
+    box-shadow: inset 0em 2.1em #444444, 0.5px 2px 10px rgb(16, 16, 16);
+    // box-shadow:-0.5px -0.5px 1px rgba(221, 221, 221, 0.643);
+}
+
+@require '~vuepress-plugin-tabs/dist/themes/default.styl'
+
+
+// .home .progress[data-v-3515b409]{
+//   display: none!important;
+//   }
+
+
+.theme-vdoing-content{
+  //  position:absolute;
+    // left:15px;
+    // top:5px;
+  
+  }
+
+// .post-list{
+//     index()
+//   }
+
+// <div data-v-2423ae67="" class="theme-vdoing-content custom card-box content__default">
+// <div data-v-2423ae67="" class="post-list">
+
+// 目录设置
+.right-menu-wrapper{
+  width: 235px!important;
+
+  }
+
+.right-menu-margin{
+  // display:table-cell;
+  // height:100%;
+  // height: 500px;
+  // margin-bottom: 1000px!important;  
+  // margin: auto  !important;
+  margin-right: 10px;
+  }
+
+
+
+// 隐藏标题旁的图片
+.theme-vdoing-wrapper h1 img{
+  display: none;
+  
+  }
+
+// h1增加底下滑线
+.page h1{
+  font-size: 2.2rem!important;
+  font-weight: 700!important;
+  margin-bottom:10px!important;
+  border-bottom: 4px solid rgb(110, 110, 110)!important;
+  display:inline-block!important; 
+  }
+
+.page h2{
+  margin-bottom: 9px!important;
+  }
+
+.md-mermaid{
+  margin-left: 0rem!important;
+  margin-right: 0rem!important;
+  }
+
+.theme-vdoing-content div[class*="language-"]{
+  margin-left: 0rem!important;
+  margin-right: 0rem!important;
+  }
+
+.theme-vdoing-content:not(.custom) img{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  }
+
+.theme-vdoing-content:not(.custom) > p:first-child, .theme-vdoing-content:not(.custom) > pre:first-child, .theme-vdoing-content:not(.custom) > .custom-block:first-child{
+  margin-top: 1.5rem!important;
+  }
+
+.theme-vdoing-content:not(.custom) > h1, .theme-vdoing-content:not(.custom) > h2, .theme-vdoing-content:not(.custom) > h3, .theme-vdoing-content:not(.custom) > h4, .theme-vdoing-content:not(.custom) > h5, .theme-vdoing-content:not(.custom) > h6{
+  margin-top: 1rem!important;
+  padding-top: 0!important;
+  }
+
+// 文字行高
+// p, ul, ol{
+//   line-height: 1.7!important;
+//   }
+
+// container group-item 样式修改
+.code-group-item{
+  background-color: rgb(247, 247, 247) !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+
+  }
+  // container group-item标题栏修改
+  .code-group-nav{
+    background-color:rgb(239, 242, 243) !important;
+  }
+  // tab蓝色条
+  .code-group-nav-tab.active{
+    background-color:rgb(247, 247, 247) !important;
+    border-bottom: 3px solid !important;
+    }
+
+  .code-group-nav-tab:hover{
+    color:rgb(212, 213, 213) !important;
+    }
+
+  // tabs的两个小圆角眼神
+  .code-group-nav-tab.active:before{
+    background: radial-gradient(12px at left top, transparent 50%, #f7f7f7 50%) !important;
+  }
+  .code-group-nav-tab.active:after{
+    background: radial-gradient(12px at right top, transparent 50%, #f7f7f7 50%) !important;
+    }
+ 
+
+// container的圆角
+.custom-block.info, .custom-block.note, .custom-block.tip, .custom-block.warning, .custom-block.danger{
+  border-radius: 4px!important;
+  border-left-width: 7px!important;
+  }
+
+
+// 定义颜色
+.custom-block.danger{
+  --hint-box-border-color:rgba(247, 51, 51, 0.757) !important;
+  }
+
+// container前的图标
+.custom-block-title::before{
+  display: none;
+  
+  }
+
+.custom-block.info .custom-block-title, .custom-block.note .custom-block-title, .custom-block.tip .custom-block-title, .custom-block.warning .custom-block-title, .custom-block.danger .custom-block-title{
+  padding-left: 0!important;
+  }
+
+
+// 代码框-代码设置
+body .theme-vdoing-content pre, body .theme-vdoing-content pre[class*="language-"]{
+  // font-family: Consolas  !important;
+  // padding-top: 0.82rem!important;
+  // margin-top: 40px!important;
+  // margin: auto  !important;
+  // padding-top: 30px!important;
+  // padding-bottom: 30px!important;
+  // line-height: 1.4029!important;
+  // font-size: 1em!important;
+  // left: 1rem!important;
+
+}
+
+
+// 代码-框行号设置
+div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
+  // font-family: Monaco!important;
+  // font-weight: 400;
+  // font-size: 12pt!important;
+  // margin-top: 30px!important;
+  // margin: auto  !important;
+  // padding-top: 30px!important;
+  // padding-bottom: 30px!important;
+  // line-height: 1.4!important;
+  // font-weight: 400;
+  // font-size: 1em!important;
+  // font-size: 14pt;
+  // display: none;
+}
+
+code, kbd, .line-number{
+  font-family: Monaco!important;
+  font-weight: 400!important;
+  font-size: 12pt!important;
+}
+
+// 背景图片
+.home-wrapper .banner{
+  min-height: 600px!important;
+  margin-top: 0!important;
+  }
+
+// 首页文字中心标题 "Hello Communism"
+.home-wrapper .banner .banner-conent .hero h1{
+  font-family: Consolas;
+  font-size: 3.1em!important;
+  text-shadow: rgb(39, 39, 39) 0.05em 0.08em 0.2em;
+  }
+// 首页文字描述 "搞编程的资本家"
+.home-wrapper .banner .banner-conent .hero .description{
+  font-family: source-code-pro;
+  font-size: 2.9em!important;
+  font-weight: 500;
+  margin: 0.8rem auto  !important;
+  text-shadow: rgb(39, 39, 39) 0.05em 0.08em 5px;
+  // box-shadow: 5px 5px 5px rgb(73, 73, 73);
+  }
+
+// 可选字体 source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+// div[class*="language-"].line-numbers-mode .line-numbers-wrapper, .highlight-lines
+
+// 首页文章列表相关
+.main-wrapper .main-left{
+  margin-top: 2.1rem !important;
+  }
+
+// 首页个人信息相关列表
+.main-wrapper .main-right{
+  margin-top: 2.1rem !important;
+  }
+

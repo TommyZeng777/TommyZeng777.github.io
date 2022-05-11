@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\TommyZeng\.node\corepack\yarn\1.22.15\bin\yarn.js add vuepress-plugin-reading-progress01~
+
+PATH: 
+  C:\Users\TommyZeng\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\TommyZeng\bin;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python38\Scripts;C:\Python38;C:\Program Files (x86)\QuickTime\QTSystem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Java\jdk-9.0.4\bin;C:\adb\platform-tools;C:\ProgramData\chocolatey\bin;C:\Tommy\you-get-master;C:\ffmpeg\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\dotnet;C:\Program Files (x86)\Calibre2;C:\Program Files\Mplus;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\nodejs\node_global\node_modules\hexo-cli\bin;C:\Users\TommyZeng\AppData\Roaming\npm;C:\Program Files\Pandoc;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Users\TommyZeng\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\TommyZeng\AppData\Local\Programs\Python\Python38-32;C:\Users\TommyZeng\AppData\Local\Microsoft\WindowsApps;C:\Users\TommyZeng\AppData\Local\Programs\Fiddler;C:\Java\jdk-9.0.4\bi;.;C:\App\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\TommyZeng\AppData\Local\Microsoft\WindowsApps;C:\Users\TommyZeng\.dotnet\tools;C:\App\mingw64\bin;C:\App\Typora;C:\Program Files\nodejs\node_global;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C;UsersTommyZengAppDataRoamingnpmnode_modules;C:\Users\TommyZeng\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\TommyZeng\bin;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python38\Scripts;C:\Python38;C:\Program Files (x86)\QuickTime\QTSystem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Java\jdk-9.0.4\bin;C:\adb\platform-tools;C:\ProgramData\chocolatey\bin;C:\Tommy\you-get-master;C:\ffmpeg\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\dotnet;C:\Program Files (x86)\Calibre2;C:\Program Files\Mplus;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\nodejs\node_global\node_modules\hexo-cli\bin;C:\Users\TommyZeng\AppData\Roaming\npm;C:\Program Files\Pandoc;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Users\TommyZeng\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\TommyZeng\AppData\Local\Programs\Python\Python38-32;C:\Users\TommyZeng\AppData\Local\Microsoft\WindowsApps;C:\Users\TommyZeng\AppData\Local\Programs\Fiddler;C:\Java\jdk-9.0.4\bi;.;C:\App\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\TommyZeng\AppData\Local\Microsoft\WindowsApps;C:\Users\TommyZeng\.dotnet\tools;C:\App\mingw64\bin;C:\App\Typora;C:\Program Files\nodejs\node_global;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/vuepress-plugin-reading-progress01~: Not found
+      at Request.params.callback [as _callback] (C:\Users\TommyZeng\.node\corepack\yarn\1.22.15\lib\cli.js:66140:18)
+      at Request.self.callback (C:\Users\TommyZeng\.node\corepack\yarn\1.22.15\lib\cli.js:140885:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (C:\Users\TommyZeng\.node\corepack\yarn\1.22.15\lib\cli.js:141857:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (C:\Users\TommyZeng\.node\corepack\yarn\1.22.15\lib\cli.js:141779:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "theme-vdoing-blog",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "vuepress dev docs --temp .temp",
+      "build": "vuepress build docs",
+      "deploy": "bash deploy.sh",
+      "editFm": "node utils/editFrontmatter.js",
+      "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
+      "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
+      "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
+    },
+    "license": "MIT",
+    "devDependencies": {
+      "@vuepress/plugin-active-header-links": "^1.9.7",
+      "@vuepress/plugin-last-updated": "^1.9.7",
+      "dayjs": "^1.9.7",
+      "inquirer": "^7.1.0",
+      "json2yaml": "^1.1.0",
+      "vuepress": "1.9.5",
+      "vuepress-plugin-baidu-autopush": "^1.0.1",
+      "vuepress-plugin-baidu-tongji": "^1.0.1",
+      "vuepress-plugin-comment": "^0.7.3",
+      "vuepress-plugin-demo-block": "^0.7.2",
+      "vuepress-plugin-fulltext-search": "^2.2.1",
+      "vuepress-plugin-one-click-copy": "^1.0.2",
+      "vuepress-plugin-thirdparty-search": "^1.0.2",
+      "vuepress-plugin-zooming": "^1.1.7",
+      "vuepress-theme-vdoing": "^1.11.1",
+      "yamljs": "^0.3.0"
+    },
+    "dependencies": {
+      "@renovamen/vuepress-plugin-mermaid": "^0.3.0",
+      "markdown-it-mermaid-pro": "^2.2.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

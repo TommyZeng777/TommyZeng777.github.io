@@ -1,11 +1,10 @@
 //***vdoing主题-样式变量（你可以修改这些变量值以覆盖主题使用的样式变量）***//
 
-// 以下注释的变量仅供参考，主题使用的最新变量请查看：https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/theme-vdoing/styles/palette.styl
-
+// 以下注释的变量仅供参考，主题使用的最新变量请查看：https://github.com/xugaoyi/vuepress-theme-vdz
 // // 颜色
 
-// $bannerTextColor = #fff // 首页banner区(博客标题)文本颜色
-// $accentColor = #11A8CD // 主题色
+$bannerTextColor = rgb(255, 255, 255)// 首页banner区(博客标题)文本颜色
+// $accentColor = rgb(206, 15, 15)// 主题色
 // $activeColor = #ff5722
 // $arrowBgColor = #ccc
 // $badgeTipColor = #42b983
@@ -21,6 +20,45 @@
 
 // // 代码块
 // $lineNumbersWrapperWidth = 2.5rem
+
+//
+.theme-mode-light
+//   --bodyBg: #f4f4f4
+//   --mainBg: rgba(255,255,255,1)
+//   --sidebarBg: rgba(255,255,255,.8)
+//   --blurBg: rgba(255,255,255,.9)
+//   --customBlockBg: rgba(255,255,255,.9)
+//   --textColor: #00323c
+//   --textLightenColor: #0085AD
+  // --borderColor: rgba(0,0,0,.15)//这个是网页搜索框和侧
+  // 代码块浅色主题
+  --codeBg: #f7f7f7
+  --codeColor: #24292e
+  //codeThemeLight()
+  // 行高亮颜色，和代码块浅色主题一起使用，一起注释
+  //div[class*="language-"]
+  //  .highlight-lines
+  //    .highlighted
+  //      background-color rgba(200,200,200,.4)
+  //  &.line-numbers-mode
+  //    .highlight-lines .highlighted
+  //      &:before
+  //        background-color rgba(200,200,200,.4)
+  // 代码块深色主题
+//   --codeBg: #fbf9f9
+//   --codeColor: #14161b
+  codeThemeDark()
+//   // 行高亮颜色，和代码块深色主题一起使用，一起注释
+//   div[class*="language-"]
+//     .highlight-lines
+//       .highlighted
+//         background-color rgba(0,0,0,.66)
+//     &.line-numbers-mode
+//       .highlight-lines .highlighted
+//         &:before
+//           background-color rgba(0,0,0,.66)
+  div[class*="language-"].line-numbers-mode::after  // 代码块的行数和内容分割线颜色
+    border-right 0px solid rgba(0, 0, 0, 0.66)
 
 // // 浅色模式
 // .theme-mode-light
@@ -65,3 +103,22 @@
 //   --codeBg: #282c34
 //   --codeColor: #fff
 //   codeThemeDark()
+
+
+
+// // 顶部进度条插件
+$readingBgColor = transparent
+ $readingZIndex = 1000
+ $readingSize = 2px
+ $readingProgressColor = rgb(86, 168, 240)
+ $readingProgressImage = none
+
+ // vuepress-plugin-tabs 插件的背景色
+ .theme-mode-dark
+  .tabs-component-tab,
+  .tabs-component-panels
+    background-color rgba(25,25,49,0.53)
+    border none
+  // vuepress-plugin-tabs 插件的标题选中颜色
+  .tabs-component-tab.is-active       
+    color #b160ea
