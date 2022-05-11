@@ -6,6 +6,7 @@ GITHUB_REPO=git@github.com:TommyZeng777/TommyZeng777.github.io.git
 
 comment=$1
 
+
 if [ ! $comment ]; then
 comment="更新内容+action自动部署"
 fi
@@ -14,6 +15,4 @@ git add -A
 
 git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh push.sh hello，其中 hello 就会插入到 $1 处，如果想两个参数，则加 $2
 
-git pull --rebase origin master
-
-git push $GITHUB_REPO master  
+git push $GITHUB_REPO   
