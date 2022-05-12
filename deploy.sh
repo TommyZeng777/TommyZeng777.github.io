@@ -33,12 +33,8 @@ else
   githubUrl=https://TommyTeng777:${GITHUB_TOKEN}@github.com/TommyTeng777/TommyTeng777.github.io.git
   git config --global user.name "TommyTeng777"
   git config --global user.email "tommyzeng1031@gmail.com"
+  
 fi
-# git init
-# git add -A
-# git commit -m "${msg}"
-# git push -f $githubUrl master # 推送到github gh-pages分支
-
 git init
 git add -A
 git commit -m "${msg}"
