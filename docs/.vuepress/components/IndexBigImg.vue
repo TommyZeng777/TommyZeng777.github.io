@@ -518,7 +518,14 @@ function nextAllTipElement(elem) {
   position: absolute;
   font-size: 34px;
   text-align: center;
+<<<<<<< HEAD
   bottom: 12%;*/
+=======
+  animation: bounce-in 5s 3s infinite;
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+>>>>>>> d65e9432dfa17927b068d3b2aeb2c3b694b6f835
   /*margin-left: -10px;*/
   cursor: pointer;
   z-index: 999;
