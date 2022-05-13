@@ -511,32 +511,17 @@ function nextAllTipElement(elem) {
   bottom: 45px;
   width: 30px;
   height: 20px;
+  
+  animation: bounce-in 5s 3s infinite;
+  
+  /*right: 48.89%;
+  position: absolute;
   font-size: 34px;
   text-align: center;
-  animation: bounce-in 5s 3s infinite;
-  position: absolute;
-  right: 48.89%;
-  bottom: 12%;
+  bottom: 12%;*/
   /*margin-left: -10px;*/
   cursor: pointer;
   z-index: 999;
-}
-@-webkit-keyframes bounce-in {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  80% {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(0);
-  }
 }
 .banner-arrow::before {
   content: "";
@@ -558,6 +543,25 @@ function nextAllTipElement(elem) {
   border-top: 5px solid rgba(255, 255, 255, 0.594);
   transform: rotate(135deg);
 }
+
+@-webkit-keyframes bounce-in {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* 描述淡入淡出元素 */
 .description {
   display: inline-block;
