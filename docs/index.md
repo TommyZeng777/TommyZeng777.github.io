@@ -2,11 +2,11 @@
 home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
-heroText: Hello Communism
-tagline: 咱们码农有力量
+heroText: Hello CCP
+tagline: 咱们码农有力量，工人万岁！
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: "https://fastly.jsdelivr.net/gh/TommyZeng777/picgo/img/202205112252404.jpg"
+bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202205112252404.jpg"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
@@ -41,13 +41,13 @@ pageClass: vdoing-index-class
 ```yaml
 - name: 麋鹿鲁哟
   desc: 大道至简，知易行难
-  avatar: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: https://www.cnblogs.com/miluluyo/ # 可选
   bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: '#6854A1' # 可选，默认var(--textColor)
 - name: XAOXUU
   desc: '#IOS #Volantis主题作者'
-  avatar: https://fastly.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+  avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
   link: https://xaoxuu.com
   bgColor: '#718971'
   textColor: '#fff'
@@ -62,24 +62,24 @@ pageClass: vdoing-index-class
 
 ::: cardImgList
 ```yaml
-- img: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
+- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容 # 描述，可选
   author: Evan Xu # 作者，可选
-  avatar: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
-- img: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
+- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
   author: Evan Xu
-  avatar: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
-- img: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
   author: Evan Xu
-  avatar: https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
 ```
 ::: -->
 
