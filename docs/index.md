@@ -3,7 +3,7 @@ home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
 # heroText: 斯基小支部
-tagline: 任重而道远，积跬步而行
+tagline: 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202209200031954.jpg"
@@ -37,7 +37,60 @@ postList: detailed
 pageClass: vdoing-index-class
 ---
 
-<!-- ::: cardList 1   
+::: cardList 1   
+```yaml
+- name: 英语专栏
+  desc: 知己知彼，再战未来
+  # avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
+  link: /pages/77350f/ # 可选
+  bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
+  textColor: '#6854A1' # 可选，默认var(--textColor)
+- name: 求职专栏
+  desc: 与资博弈，其乐无穷
+  # avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+  link: /pages/bf38e1/
+  bgColor: '#718971'
+  textColor: '#fff'
+- name: 关于本站
+  desc: 讲讲搞网站的曲折之路
+  # avatar: https://reinness.com/avatar.png
+  link: /pages/9d57fc/
+  bgColor: '#FCDBA0'
+  textColor: '#A05F2C'
+```
+:::
+
+<!-- ::: cardImgList
+```yaml
+- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
+  link: https://xugaoyi.com/
+  name: 标题
+  desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容 # 描述，可选
+  author: Evan Xu # 作者，可选
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
+- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
+  link: https://xugaoyi.com/
+  name: 标题
+  desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
+  author: Evan Xu
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
+  link: https://xugaoyi.com/
+  name: 标题
+  desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
+  author: Evan Xu
+  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+```
+::: -->
+
+
+
+
+
+
+<!-- 
+
+::: cardList 1   
 ```yaml
 - name: 麋鹿鲁哟
   desc: 大道至简，知易行难
@@ -82,6 +135,7 @@ pageClass: vdoing-index-class
   avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
 ```
 ::: -->
+
 
 <!-- 小熊猫 -->
 <!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
