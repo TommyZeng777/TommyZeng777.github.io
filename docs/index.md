@@ -2,7 +2,7 @@
 home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
-# heroText: 斯基小支部
+heroText: Internationale
 tagline: 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
