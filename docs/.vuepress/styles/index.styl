@@ -331,7 +331,10 @@ body .vuepress-plugin-demo-block__wrapper
   }
 
 
-// 代码框-代码设置
+
+
+//=============================================================================================
+// 代码框-代码设置//无效方法
 body .theme-vdoing-content pre, body .theme-vdoing-content pre[class*="language-"]{
   // font-family: Consolas  !important;
   // padding-top: 0.82rem!important;
@@ -344,9 +347,7 @@ body .theme-vdoing-content pre, body .theme-vdoing-content pre[class*="language-
   // left: 1rem!important;
 
 }
-
-
-// 代码-框行号设置
+// 代码-框行号设置//无效方法
 div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
   // font-family: Monaco!important;
   // font-weight: 400;
@@ -363,10 +364,15 @@ div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
 }
 
 code, kbd, .line-number{
-  font-family: Monaco!important;
+  font-family: Monaco!important;//解决办法
   font-weight: 400!important;
   font-size: 12pt!important;
 }
+//代码框行号和代码行距不同的解决办法：修改字体即可，是字体的行距bug
+//========================================================================================
+
+
+
 
 // 背景图片
 .home-wrapper .banner{
