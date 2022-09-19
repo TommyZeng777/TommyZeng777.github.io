@@ -2,11 +2,11 @@
 home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
-heroText: Hello CCP
-tagline: 咱们码农有力量，工人万岁！
+# heroText: 斯基小支部
+tagline: 任重而道远，积跬步而行
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202205112252404.jpg"
+bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202209200031954.jpg"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
