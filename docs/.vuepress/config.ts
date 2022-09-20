@@ -12,8 +12,8 @@
  
  
  export default defineConfig4CustomTheme<VdoingThemeConfig>({
-   theme: 'vdoing', // 使用npm主题包
-   // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
+  //  theme: 'vdoing', // 使用npm主题包
+   theme: resolve('docs/.vuepress/vuepress-theme-vdoing'), // 使用本地主题包
    // 这个就是官方提到的locales，看来是用来填写相关信息的
    locales: {
      '/': {

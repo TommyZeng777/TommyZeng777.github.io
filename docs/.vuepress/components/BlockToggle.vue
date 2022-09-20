@@ -140,10 +140,13 @@ export default {
 /* 代码块元素 */
 .line-numbers-mode {
   overflow: hidden;
-  transition: height 0.3s;
-  /* border-radius: 5px!important;  */
+  /*transition: height 0.3s;
+   border-radius: 5px!important;  */
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  font-family: Monaco!important;
+  font-weight: 400!important;
+  font-size: 12pt!important;
   
 }
 .line-numbers-mode::before {
@@ -166,12 +169,14 @@ export default {
 
 /* 代码块内容 */
 div[class*="language-"].line-numbers-mode pre {
-  margin: 30px 0 0.85rem 0;
+  margin: 30px 0 0.8rem 0;
+  
 }
 /* 代码块的行数 */
 div[class*="language-"].line-numbers-mode .line-numbers-wrapper,
 .highlight-lines {
   margin-top: 30px;
+  
 }
 /* 箭头关闭后旋转 -90 度 */
 .closed {

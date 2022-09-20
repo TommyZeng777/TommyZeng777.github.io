@@ -335,7 +335,7 @@ body .vuepress-plugin-demo-block__wrapper
 
 //=============================================================================================
 // 代码框-代码设置//无效方法
-body .theme-vdoing-content pre, body .theme-vdoing-content pre[class*="language-"]{
+// body .theme-vdoing-content pre, body .theme-vdoing-content pre[class*="language-"]{
   // font-family: Consolas  !important;
   // padding-top: 0.82rem!important;
   // margin-top: 40px!important;
@@ -346,32 +346,38 @@ body .theme-vdoing-content pre, body .theme-vdoing-content pre[class*="language-
   // font-size: 1em!important;
   // left: 1rem!important;
 
-}
+// }
 // 代码-框行号设置//无效方法
-div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
-  // font-family: Monaco!important;
-  // font-weight: 400;
-  // font-size: 12pt!important;
-  // margin-top: 30px!important;
-  // margin: auto  !important;
-  // padding-top: 30px!important;
-  // padding-bottom: 30px!important;
-  // line-height: 1.4!important;
-  // font-weight: 400;
-  // font-size: 1em!important;
-  // font-size: 14pt;
-  // display: none;
-}
+// div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
+//   font-family: Monaco!important;
+//   font-weight: 400;
+//   font-size: 12pt!important;
+//   margin-top: 30px!important;
+//   margin: auto  !important;
+//   padding-top: 30px!important;
+//   padding-bottom: 30px!important;
+//   line-height: 1.4!important;
+//   font-weight: 400;
+//   font-size: 1em!important;
+//   font-size: 14pt;
+//   display: none;
+// }
 
 code, kbd, .line-number{
   font-family: Monaco!important;//解决办法
   font-weight: 400!important;
   font-size: 12pt!important;
+  line-height: 1.7rem!important;
 }
 //代码框行号和代码行距不同的解决办法：修改字体即可，是字体的行距bug
 //========================================================================================
+.div class="theme-vdoing-content custom card-box content__default"{
+  order: 2!important;
+  }
 
-
+.div class="post-list"{
+  order: 1!important;
+  }
 
 
 // 背景图片
