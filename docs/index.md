@@ -3,7 +3,8 @@ home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
 heroText: Internationale
-tagline: 道阻且长，互励共行
+tagline: 任重道远，互勉
+# 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202209200031954.jpg"
