@@ -6,6 +6,22 @@
 //     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 // }
 
+// @font-face {
+//     font-family: 'FiraCode';
+//     src: url("./public/fonts/FiraCode-VF.ttf") format('ttf');
+// }
+// @font-face {
+//     font-family: 'sarasa-ui-sc-regular';
+//     src: url("./public/fonts/sarasa-ui-sc-regular.ttf") format('ttf');
+//  }
+// @font-face {
+//     font-family: 'times';
+//     src: url("fonts/times.ttf") format('ttf');
+// }
+// @font-face {
+//     font-family: 'times';
+//     src: url("fonts/timesbd.ttf") format('ttf');
+// }
 
 // 评论区颜色重置
 .gt-container
@@ -364,20 +380,20 @@ body .vuepress-plugin-demo-block__wrapper
 // }
 
 code, kbd, .line-number{
-  font-family: Monaco!important;//解决办法
+  font-family: monospace, Consolas, source-code-pro;//解决办法
   font-weight: 400!important;
-  font-size: 12pt!important;
+  // font-size: 11pt!important;
   line-height: 1.7rem!important;
 }
 //代码框行号和代码行距不同的解决办法：修改字体即可，是字体的行距bug
 //========================================================================================
-.div class="theme-vdoing-content custom card-box content__default"{
-  order: 2!important;
-  }
+// .div class="theme-vdoing-content custom card-box content__default"{
+//   order: 2!important;
+//   }
 
-.div class="post-list"{
-  order: 1!important;
-  }
+// .div class="post-list"{
+//   order: 1!important;
+//   }
 
 
 // 背景图片
@@ -467,18 +483,84 @@ code, kbd, .line-number{
 // (min-resolution: 192dpi) {
 //     /* Retina-specific stuff here */
 // }
-div{
-    font-size: 12pt;
+
+
+
+
+// body{
+//     font-family:"Droid Sans", "Fira Sans", "Helvetica Neue", sans-serif ;
+// }
+
+// 下面两个是正文的字体和大小调整
+.post-list{
+  
+  font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
+ 
+  }
+.post-list .post .excerpt-wrapper .excerpt{
+    font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
+    font-size: 12pt !important;
+    }
+
+// 自适应文字大小模块
+div.theme-vdoing-wrapper{
+    font-size: 13.5pt;
+    font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
     -webkit-transition:font-size 0.2s ease-out;
 }
 
-@media only screen and (max-width: 1200px) { div{ font-size: 13pt; }}
-@media only screen and (max-width: 1100px) { div{ font-size: 13px; }}
+// 下面两个是右侧目录的字体调整
+.right-menu-wrapper .right-menu-title{
+  font-family: Roboto;
+  font-size: 16pt !important;
+  font-weight: 600;
+  }
+.right-menu-wrapper .right-menu-content .right-menu-item.level1{
+  font-size: 13.5pt !important;
+  }
+.right-menu-wrapper .right-menu-content .right-menu-item.level2{
+  font-size: 12pt !important;
+  }
+
+
+@media only screen and (max-width: 1200px) 
+{ 
+div{
+   font-size: 13pt; 
+   }
+}
+@media only screen and (max-width: 1100px) { div{
+   font-size: 13px; 
+   }}
 @media only screen and (max-width: 1000px) { div{ font-size: 13px; }}
 @media only screen and (max-width: 900px) { div{ font-size: 13px; }}
 @media only screen and (max-width: 800px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 700px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 600px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 500px) { div{ font-size: 14pt; }}
-@media only screen and (max-width: 400px) { div{ font-size: 15pt; }}
-@media only screen and (max-width: 300px) { div{ font-size: 15px; }}
+@media only screen and (max-width: 400px) { div{ font-size: 15pt; }
+  // }
+  //   blockquote{
+  //   // border-left-width: 0.1rem;
+  //   padding-left: 0.8rem !important;
+  //   padding-top: 0rem !important;
+  //   padding-bottom: 0rem !important;
+  //  }
+
+@media only screen and (max-width: 300px) { div{ 
+  
+  font-size: 15pt !important;
+   }
+   
+   }
+
+   //9.23任务，把这个效果按显示大小生效
+// blockquote{
+//     margin-top: 0.8rem;
+//     margin-bottom: 1.6rem !important; 
+//     font-size:14.5pt; 
+//     // border-left-width: 0.1rem;
+//     padding-left: 0.5rem !important;
+//     padding-top: 0rem !important;
+//     padding-bottom: 0rem !important;
+//    }
