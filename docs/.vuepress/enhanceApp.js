@@ -1,6 +1,6 @@
 // import vue from 'vue/dist/vue.esm.browser'
-import './public/fonts/FiraCode-VF.ttf';
-import './public/fonts/sarasa-ui-sc-regular.ttf';
+// import './public/fonts/FiraCode-VF.ttf';
+// import './public/fonts/sarasa-ui-sc-regular.ttf';
 import LastReadingPopup from './components/LastReadingPopup.vue'
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
