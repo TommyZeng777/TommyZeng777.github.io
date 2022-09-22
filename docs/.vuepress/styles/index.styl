@@ -541,7 +541,39 @@ div{
 @media only screen and (max-width: 800px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 700px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 600px) { div{ font-size: 14pt; }}
-@media only screen and (max-width: 500px) { div{ font-size: 14.5pt; }}
+@media only screen and (max-width: 500px) { div{ font-size: 14.5pt; }
+  blockquote{
+    // border-left-width: 0.15rem;
+    
+    border-left 0.2rem solid rgba(141, 141, 141, 0.235);
+    font-size:12pt; 
+    
+    padding-left: 0.4rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0.4rem ;
+    margin-bottom: 3rem !important; 
+   }
+   .home-wrapper .banner .banner-conent .hero h1{
+    font-size: 2.4em !important;
+    }
+  .home-wrapper .banner .banner-conent .hero .description{
+    font-size: 2.3em !important;
+    }
+  .banner-arrow{
+    margin-top: 80%;
+    }
+  //手机Logo替代汉堡菜单按钮解决方案
+  .sidebar-button{
+      opacity:0;
+      transform: translateX(17px); 
+      z-index:1;
+      }
+  .navbar a, .navbar span, .navbar img{
+        transform: translateX(-20px) translateY(1px);; 
+      }
+  
+  }
 @media only screen and (max-width: 400px) { div{ font-size: 15pt; }
   // }
   blockquote{
@@ -554,13 +586,29 @@ div{
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
     margin-top: 0.4rem ;
-    margin-bottom: 2.5rem !important; 
-    
-
+    margin-bottom: 3rem !important; 
    }
+   .home-wrapper .banner .banner-conent .hero h1{
+    font-size: 2.3em !important;
+    }
+  .home-wrapper .banner .banner-conent .hero .description{
+    font-size: 2.2em !important;
+    }
+  .banner-arrow{
+    margin-top: 75%;
+    }
+  //手机Logo替代汉堡菜单按钮解决方案
+  .sidebar-button{
+      opacity:0;
+      transform: translateX(17px); 
+      z-index:1;
+      }
+  .navbar a, .navbar span, .navbar img{
+        transform: translateX(-20px) translateY(1px);; 
+      }
 }
 
-@media only screen and (max-width: 300px) { div { 
+@media only screen and (max-width: 320px) { div { 
   font-size: 15.5pt ;}
   blockquote{
     border-left 0.15rem solid rgba(141, 141, 141, 0.235);
@@ -574,6 +622,24 @@ div{
     margin-top: 0.4rem ;
     margin-bottom: 2.5rem !important; 
    }
+   .home-wrapper .banner .banner-conent .hero h1{
+    font-size: 1.8em !important;
+    }
+  .home-wrapper .banner .banner-conent .hero .description{
+    font-size: 1.6em !important;
+    }
+  .banner-arrow{
+    margin-top: 60%;
+    }
+    //手机Logo替代汉堡菜单按钮解决方案
+  .sidebar-button{
+      opacity:0;
+      transform: translateX(17px); 
+      z-index:1;
+      }
+  .navbar a, .navbar span, .navbar img{
+        transform: translateX(-20px) translateY(1px);; 
+      }
   }
  
    //9.23任务，把这个效果按显示大小生效 ok!!!
