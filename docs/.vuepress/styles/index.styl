@@ -380,11 +380,17 @@ body .vuepress-plugin-demo-block__wrapper
 // }
 
 code, kbd, .line-number{
-  font-family: monospace, Consolas, source-code-pro;//解决办法
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
   font-weight: 400!important;
   // font-size: 11pt!important;
-  line-height: 1.7rem!important;
+  line-height: 1.4rem;
 }
+.line-numbers-wrapper{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  // font-weight: 400!important;
+  // font-size: 11pt!important;
+  line-height: 1.4rem;
+  }
 //代码框行号和代码行距不同的解决办法：修改字体即可，是字体的行距bug
 //========================================================================================
 // .div class="theme-vdoing-content custom card-box content__default"{
@@ -535,25 +541,39 @@ div{
 @media only screen and (max-width: 800px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 700px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 600px) { div{ font-size: 14pt; }}
-@media only screen and (max-width: 500px) { div{ font-size: 14pt; }}
+@media only screen and (max-width: 500px) { div{ font-size: 14.5pt; }}
 @media only screen and (max-width: 400px) { div{ font-size: 15pt; }
   // }
-  //   blockquote{
-  //   // border-left-width: 0.1rem;
-  //   padding-left: 0.8rem !important;
-  //   padding-top: 0rem !important;
-  //   padding-bottom: 0rem !important;
-  //  }
-}
-@media only screen and (max-width: 300px) { div{ font-size: 15pt ;}}
+  blockquote{
+    // border-left-width: 0.15rem;
+    
+    border-left 0.2rem solid rgba(141, 141, 141, 0.235);
+    font-size:12pt; 
+    
+    padding-left: 0.4rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0.4rem ;
+    margin-bottom: 2.5rem !important; 
+    
 
-   //9.23任务，把这个效果按显示大小生效
-// blockquote{
-//     margin-top: 0.8rem;
-//     margin-bottom: 1.6rem !important; 
-//     font-size:14.5pt; 
-//     // border-left-width: 0.1rem;
-//     padding-left: 0.5rem !important;
-//     padding-top: 0rem !important;
-//     padding-bottom: 0rem !important;
-//    }
+   }
+}
+
+@media only screen and (max-width: 300px) { div { 
+  font-size: 15.5pt ;}
+  blockquote{
+    border-left 0.15rem solid rgba(141, 141, 141, 0.235);
+    font-size:13pt; 
+    margin-top: 0.8rem;
+    margin-bottom: 3rem !important; 
+    padding-left: 0.3rem !important;
+    // border-left-width: 0.1rem;
+    
+    padding-top: 0rem !important;
+    margin-top: 0.4rem ;
+    margin-bottom: 2.5rem !important; 
+   }
+  }
+ 
+   //9.23任务，把这个效果按显示大小生效 ok!!!
