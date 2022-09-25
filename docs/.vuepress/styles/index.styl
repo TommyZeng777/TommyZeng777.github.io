@@ -541,6 +541,8 @@ div{
 @media only screen and (max-width: 800px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 700px) { div{ font-size: 14pt; }}
 @media only screen and (max-width: 600px) { div{ font-size: 14pt; }}
+
+//500px宽度
 @media only screen and (max-width: 500px) { div{ font-size: 14.5pt; }
   blockquote{
     // border-left-width: 0.15rem;
@@ -566,21 +568,125 @@ div{
   //手机Logo替代汉堡菜单按钮解决方案
   .sidebar-button{
       opacity:0;
-      transform: translateX(17px); 
+      transform: translateX(7px)scale(3.7, 1); //
       z-index:1;
       }
   .navbar a, .navbar span, .navbar img{
         transform: translateX(-20px) translateY(1px);; 
       }
+  //文章末尾“最近更新”字体过大问题缩小
+  .article-list .article-wrapper dl dt a div{
+    font-size:12pt;
+    }
+  //文章内字体显示优化（（（（（（（！！！！！！！=====！！！！！！！================）））））））））））
+  //手机端侧栏字体过小
+  .sidebar .blogger .blogger-info h3{
+    font-size:18pt !important;      
+    }
+  .sidebar > .sidebar-links{
+    font-size:13pt;
+    }
+  .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
+    font-size:1 pt !important;
+    }
+  .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
+    font-size:14pt !important;
+    }
+  .dropdown-wrapper .dropdown-title{  //汉堡菜单侧拉栏展开菜单字体优化
+    font-size:14pt !important;
+    }
+
   
+  .page h1{
+    font-size:20pt !important;
+    font-weight: 700 !important;
+    }
+  .theme-vdoing-content:not(.custom) > h2{
+    margin-top:5px  !important;
+    font-size:18pt !important;
+    font-weight: 600;
   }
-@media only screen and (max-width: 400px) { div{ font-size: 15pt; }
-  // }
+  strong{
+    font-weight: 550;
+  }
+  .theme-vdoing-content{
+    font-size:15pt ;
+    }
+
+  //主页文章字体显示优化
+  .cardListContainer .card-list .card-item div{//专栏板块调整======
+    font-size:20pt;
+    
+    }
+  .cardListContainer .card-list .card-item div .desc{
+      font-size:13pt !important;
+    }//==========================================================
+
+ .categories-wrapper .categories a{//底部“文章分类”和“热门标签”=========
+    font-size:13.5pt !important;
+    }
+  .categories-wrapper .title{
+    font-size:15pt !important;
+    }
+  .tags-wrapper .title{ //tag
+    font-size:15pt !important;
+    }
+  .tags-wrapper .tags a{
+    font-size:13pt !important;
+    font-weight: 400 !important;
+    }
+  //========================
+
+
+
+  .post-list .post{ //文章板块底栏调整——边距========
+    padding-bottom: 8px !important;
+    }
+  .post-list .post .title-wrapper h2 a{ //大标题字体优化
+    font-size:20pt;
+    font-weight: 500 !important;
+  }
+  .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{
+    font-size:10pt !important;
+    }
+  .post-list .post .excerpt-wrapper .excerpt{//文章预览字体优化
+    font-size:13pt !important;
+    // font-weight: 500 !important;
+    } 
+  .post-list .post .excerpt-wrapper .readmore{
+    margin-top:10px;
+    margin-right:0px !important;
+    font-size:13pt !important;
+    }
+
+  //代码块优化篇
+  code, kbd, .line-number{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  font-weight: 400!important;
+  // font-size: 11pt!important;
+  line-height: 20pt !important;
+}
+.line-numbers-wrapper{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  // font-weight: 400!important;
+  // font-size: 11pt!important;
+  // line-height: 1.9pt;
+  }
+
+ }
+
+//400px=============================================================================400px 
+@media only screen and (max-width: 400px) { 
+  div{ font-size: 15pt; }
+  
+  // 注释栏的样式优化
   blockquote{
     // border-left-width: 0.15rem;
     
     border-left 0.2rem solid rgba(141, 141, 141, 0.235);
-    font-size:12pt; 
+    font-size:13pt; 
     
     padding-left: 0.4rem !important;
     padding-top: 0rem !important;
@@ -597,17 +703,124 @@ div{
   .banner-arrow{
     margin-top: 75%;
     }
-  //手机Logo替代汉堡菜单按钮解决方案
+
+  //手机Logo替代汉堡菜单按钮解决方案===
   .sidebar-button{
       opacity:0;
-      transform: translateX(17px); 
+      transform: translateX(7px)scale(3.7, 1); //增加了尺寸，防止出现按了没反应的问题
       z-index:1;
       }
   .navbar a, .navbar span, .navbar img{
         transform: translateX(-20px) translateY(1px);; 
       }
+  //==============================
+
+
+  //字体显示效果调整
+  //文章末尾“最近更新”字体过大问题缩小
+  .article-list .article-wrapper dl dt a div{
+    font-size:13pt;
+    }
+
+  //文章内字体显示优化（（（（（（（！！！！！！！=====！！！！！！！================）））））））））））
+  //手机端侧栏字体过小
+  .sidebar .blogger .blogger-info h3{
+    font-size:16.5pt !important;
+    }
+  .sidebar > .sidebar-links{
+    font-size:13pt;
+    }
+  .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
+    font-size:1 pt !important;
+    }
+  .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
+    font-size:14pt !important;
+    }
+  .dropdown-wrapper .dropdown-title{  //汉堡菜单侧拉栏展开菜单字体优化
+    font-size:14pt !important;
+    }
+
+  
+  .page h1{
+    font-size:20pt !important;
+    font-weight: 700 !important;
+    }
+  .theme-vdoing-content:not(.custom) > h2{
+    margin-top:5px  !important;
+    font-size:18pt !important;
+    font-weight: 600;
+  }
+  strong{
+    font-weight: 550;
+  }
+  .theme-vdoing-content{
+    font-size:15pt ;
+    }
+
+  //主页文章字体显示优化
+  .cardListContainer .card-list .card-item div{//专栏板块调整======
+    font-size:20pt;
+    
+    }
+  .cardListContainer .card-list .card-item div .desc{
+      font-size:13pt !important;
+    }//==========================================================
+
+ .categories-wrapper .categories a{//底部“文章分类”和“热门标签”=========
+    font-size:13.5pt !important;
+    }
+  .categories-wrapper .title{
+    font-size:15pt !important;
+    }
+  .tags-wrapper .title{ //tag
+    font-size:15pt !important;
+    }
+  .tags-wrapper .tags a{
+    font-size:13pt !important;
+    font-weight: 400 !important;
+    }
+  //========================
+
+
+
+  .post-list .post{ //文章板块底栏调整——边距========
+    padding-bottom: 8px !important;
+    }
+  .post-list .post .title-wrapper h2 a{ //大标题字体优化
+    font-size:20pt;
+    font-weight: 500 !important;
+  }
+  .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{
+    font-size:10pt !important;
+    }
+  .post-list .post .excerpt-wrapper .excerpt{//文章预览字体优化
+    font-size:13pt !important;
+    // font-weight: 500 !important;
+    } 
+  .post-list .post .excerpt-wrapper .readmore{
+    margin-top:10px;
+    margin-right:0px !important;
+    font-size:13pt !important;
+    }
+
+  //代码块优化篇
+  code, kbd, .line-number{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  font-weight: 400!important;
+  // font-size: 11pt!important;
+  line-height: 20pt !important;
+}
+.line-numbers-wrapper{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  // font-weight: 400!important;
+  // font-size: 11pt!important;
+  // line-height: 1.9pt;
+  }
 }
 
+//!!!!!!320px宽度的屏幕
 @media only screen and (max-width: 320px) { div { 
   font-size: 15.5pt ;}
   blockquote{
@@ -631,15 +844,114 @@ div{
   .banner-arrow{
     margin-top: 60%;
     }
-    //手机Logo替代汉堡菜单按钮解决方案
+  //手机Logo替代汉堡菜单按钮解决方案
   .sidebar-button{
       opacity:0;
-      transform: translateX(17px); 
+      transform: translateX(7px)scale(3.7, 1); //
       z-index:1;
       }
   .navbar a, .navbar span, .navbar img{
         transform: translateX(-20px) translateY(1px);; 
       }
   }
+  //文章末尾“最近更新”字体过大问题缩小
+  .article-list .article-wrapper dl dt a div{
+    font-size:13.5pt;
+    }
  
-   //9.23任务，把这个效果按显示大小生效 ok!!!
+   //文章内字体显示优化（（（（（（（！！！！！！！=====！！！！！！！================）））））））））））
+  //手机端侧栏字体过小
+  .blogger-info{
+    font-size:12pt;
+    }
+  .sidebar > .sidebar-links{
+    font-size:13pt;
+    }
+  .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
+    font-size:1 pt !important;
+    }
+  .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
+    font-size:14pt !important;
+    }
+  .dropdown-wrapper .dropdown-title{  //汉堡菜单侧拉栏展开菜单字体优化
+    font-size:14pt !important;
+    }
+
+  
+  .page h1{
+    font-size:20pt !important;
+    font-weight: 700 !important;
+    }
+  .theme-vdoing-content:not(.custom) > h2{
+    margin-top:5px  !important;
+    font-size:18pt !important;
+    font-weight: 600;
+  }
+  strong{
+    font-weight: 550;
+  }
+  .theme-vdoing-content{
+    font-size:15pt ;
+    }
+
+  //主页文章字体显示优化
+  .cardListContainer .card-list .card-item div{//专栏板块调整======
+    font-size:20pt;
+    
+    }
+  .cardListContainer .card-list .card-item div .desc{
+      font-size:13pt !important;
+    }//==========================================================
+
+ .categories-wrapper .categories a{//底部“文章分类”和“热门标签”=========
+    font-size:13.5pt !important;
+    }
+  .categories-wrapper .title{
+    font-size:15pt !important;
+    }
+  .tags-wrapper .title{ //tag
+    font-size:15pt !important;
+    }
+  .tags-wrapper .tags a{
+    font-size:13pt !important;
+    font-weight: 400 !important;
+    }
+  //========================
+
+
+
+  .post-list .post{ //文章板块底栏调整——边距========
+    padding-bottom: 8px !important;
+    }
+  .post-list .post .title-wrapper h2 a{ //大标题字体优化
+    font-size:20pt;
+    font-weight: 500 !important;
+  }
+  .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{
+    font-size:10pt !important;
+    }
+  .post-list .post .excerpt-wrapper .excerpt{//文章预览字体优化
+    font-size:13pt !important;
+    // font-weight: 500 !important;
+    } 
+  .post-list .post .excerpt-wrapper .readmore{
+    margin-top:10px;
+    margin-right:0px !important;
+    font-size:13pt !important;
+    }
+
+  //代码块优化篇
+  code, kbd, .line-number{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  font-weight: 400!important;
+  // font-size: 11pt!important;
+  line-height: 20pt !important;
+}
+.line-numbers-wrapper{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  // font-weight: 400!important;
+  // font-size: 11pt!important;
+  // line-height: 1.9pt;
+  }
