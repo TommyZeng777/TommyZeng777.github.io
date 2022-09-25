@@ -1,28 +1,4 @@
 
-// 引入字体
-// @font-face {
-//     font-family: 'Fira Code';
-//     src: local('Fira Code'), local('Fira Code'), url('./font/FiraCode-VF.ttf') format('ttf');
-//     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-// }
-
-// @font-face {
-//     font-family: 'FiraCode';
-//     src: url("./public/fonts/FiraCode-VF.ttf") format('ttf');
-// }
-// @font-face {
-//     font-family: 'sarasa-ui-sc-regular';
-//     src: url("./public/fonts/sarasa-ui-sc-regular.ttf") format('ttf');
-//  }
-// @font-face {
-//     font-family: 'times';
-//     src: url("fonts/times.ttf") format('ttf');
-// }
-// @font-face {
-//     font-family: 'times';
-//     src: url("fonts/timesbd.ttf") format('ttf');
-// }
-
 // 评论区颜色重置
 .gt-container
   .gt-ico-tip
@@ -500,7 +476,7 @@ code, kbd, .line-number{
 // 下面是正文的字体和大小调整
 
 .post-list .post .excerpt-wrapper .excerpt{
-    font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
+    // font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
     font-size: 12pt !important;
     margin-top: 0.7rem !important;
     margin-bottom: 0rem !important;
@@ -509,13 +485,13 @@ code, kbd, .line-number{
 // 自适应文字大小模块
 div.theme-vdoing-wrapper{
     font-size: 12pt;
-    font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
+    // font-family:"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
     -webkit-transition:font-size 0.2s ease-out;
 }
 
 // 下面两个是右侧目录的字体调整
 .right-menu-wrapper .right-menu-title{
-  font-family: Roboto;
+  // font-family: Roboto;
   font-size: 16pt !important;
   font-weight: 600;
   }
@@ -587,7 +563,7 @@ div{
     font-size:13pt;
     }
   .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
-    font-size:1 pt !important;
+    font-size:13 pt !important;
     }
   .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
     font-size:14pt !important;
@@ -666,16 +642,17 @@ div{
   font-weight: 400!important;
   // font-size: 11pt!important;
   line-height: 20pt !important;
-}
-.line-numbers-wrapper{
+  }
+  .line-numbers-wrapper{
   font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
   font-size:13pt !important;
   // font-weight: 400!important;
   // font-size: 11pt!important;
   // line-height: 1.9pt;
   }
+  
+  }
 
- }
 
 //400px=============================================================================400px 
 @media only screen and (max-width: 400px) { 
@@ -731,7 +708,7 @@ div{
     font-size:13pt;
     }
   .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
-    font-size:1 pt !important;
+    font-size:13pt !important;
     }
   .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
     font-size:14pt !important;
@@ -810,8 +787,8 @@ div{
   font-weight: 400!important;
   // font-size: 11pt!important;
   line-height: 20pt !important;
-}
-.line-numbers-wrapper{
+  }
+    .line-numbers-wrapper{
   font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
   font-size:13pt !important;
   // font-weight: 400!important;
@@ -853,7 +830,7 @@ div{
   .navbar a, .navbar span, .navbar img{
         transform: translateX(-20px) translateY(1px);; 
       }
-  }
+  
   //文章末尾“最近更新”字体过大问题缩小
   .article-list .article-wrapper dl dt a div{
     font-size:13.5pt;
@@ -868,7 +845,7 @@ div{
     font-size:13pt;
     }
   .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
-    font-size:1 pt !important;
+    font-size:13 pt !important;
     }
   .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
     font-size:14pt !important;
@@ -947,11 +924,12 @@ div{
   font-weight: 400!important;
   // font-size: 11pt!important;
   line-height: 20pt !important;
-}
-.line-numbers-wrapper{
+  }
+  .line-numbers-wrapper{
   font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
   font-size:13pt !important;
   // font-weight: 400!important;
   // font-size: 11pt!important;
   // line-height: 1.9pt;
   }
+}
