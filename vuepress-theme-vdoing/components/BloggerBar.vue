@@ -13,6 +13,7 @@
         :style="{ width: 100 / social.icons.length + '%' }"
         target="_blank"
       />
+      <!-- target="_blank"  往前2行的跳转空白页的命令-->
     </div>
     <div class="blogger">
       <span class="name">{{ blogger.name }}</span>
