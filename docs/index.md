@@ -52,6 +52,12 @@ pageClass: vdoing-index-class
   link: /pages/bf38e1/
   bgColor: '#718971'
   textColor: '#fff'
+# - name: 编程小白
+#   desc: 只写小白能看懂的编程教学
+#   # avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+#   link: /pages/56ab3e/
+#   bgColor: '#718971'
+#   textColor: '#fff'
 - name: 关于本站
   desc: 讲讲搞网站的曲折之路
   # avatar: https://reinness.com/avatar.png

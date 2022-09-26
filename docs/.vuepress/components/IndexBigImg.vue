@@ -479,16 +479,16 @@ function nextAllTipElement(elem) {
   /* background-attachment: fixed !important; */
   
 }
-/* 图片中间的签名和标题位置 */
+/* 图片中间的签名和标题位置 
 .banner-conent {
-  /*margin-top: 23vh !important;*/
-}
-/* 下面是配合 js 用的 class 样式 */
+  /*margin-top: 23vh !important;
+}*/
+/* 下面是配合 js 用的 class 样式 
 .vdoing-index-class .navbar1 {
   /* background-color: transparent;
   box-shadow: none;
-  backdrop-filter: none; */
-}
+  backdrop-filter: none; 
+}*/
 .vdoing-index-class .nav-links1 > .nav-item > a,  /* 没有二级导航的一级导航 */
   .vdoing-index-class .nav-links1 > a,   /* GitHub */
   .vdoing-index-class .nav-links1 .dropdown-title a:hover,   /* 鼠标悬停 */
@@ -497,37 +497,39 @@ function nextAllTipElement(elem) {
   .vdoing-index-class .site-name1  /* 左侧的名字 */ {
   color: #fff !important;
 }
-/* 页脚的颜色 */
+/* 页脚的颜色 
 .vdoing-index-class .footer {
-  /*color: #fff;*/
-}
+  color: #fff;
+}*/
 .vdoing-index-class .search-box1 input {
   border-color: #fff;
   color: #fff;
 }
-/* 下面是箭头相关的样式 */
+/* 下面是箭头相关的样式 
 .banner-arrow {
   display: block;
-  /*margin: 12rem auto 0;*/
-  bottom: 45px;
+  /*margin: 12rem auto 0;
   width: 30px;
   height: 20px;
   
-  animation: bounce-in 5s 3s infinite;
-  
-  /*right: 48.89%;
+  z-index: 10;
+  cursor: pointer;*/
+  /*cursor：pointer增加鼠标放置后的点击图标显示*/
+  /*
+      animation: bounce-in 4s 2s infinite;
+  right: 48.89%;
   position: absolute;
   font-size: 34px;
   text-align: center;
   bottom: 12%;*/
-  /*margin-left: -10px;*/
-  cursor: pointer;
-  z-index: 999;
-}
+  /*margin-left: -10px;
+}*/
+
+
 .banner-arrow::before {
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   display: block;
   border-right: 5px solid rgba(255, 255, 255, 0.594);
   border-top: 5px solid rgba(255, 255, 255, 0.594);
@@ -537,8 +539,8 @@ function nextAllTipElement(elem) {
 }
 .banner-arrow::after {
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   display: block;
   border-right: 5px solid rgba(255, 255, 255, 0.594);
   border-top: 5px solid rgba(255, 255, 255, 0.594);
