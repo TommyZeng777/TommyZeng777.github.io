@@ -3,7 +3,7 @@ home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
 heroText: Internationale
-tagline: 任重道远，互勉
+tagline: 心齐方可成龙
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
@@ -40,16 +40,16 @@ pageClass: vdoing-index-class
 
 ::: cardList 1   
 ```yaml
-- name: 英语专栏1
+- name: 英语专栏
   desc: 知己知彼，再战未来
   # avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: /pages/77350f/ # 可选
   bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: '#6854A1' # 可选，默认var(--textColor)
-- name: 求职专栏
-  desc: 与资博弈，其乐无穷
+- name: 考研专栏
+  desc: 小胖读研去
   # avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
-  link: /pages/bf38e1/
+  link: /pages/82ac8b/
   bgColor: '#718971'
   textColor: '#fff'
 # - name: 编程小白
