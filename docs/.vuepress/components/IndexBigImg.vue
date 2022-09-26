@@ -527,7 +527,7 @@ function nextAllTipElement(elem) {
 .banner-arrow{
   -webkit-animation: bounce-in 4s 2s infinite;
   margin:0 auto;
-  width: 27px;
+  width: 33px;
   height: 20px;
   margin-top: 13%;
   display: block;
