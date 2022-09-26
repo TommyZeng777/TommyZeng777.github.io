@@ -536,7 +536,7 @@ function nextAllTipElement(elem) {
   }
 
 
-.banner-arrow::before {
+/*.banner-arrow::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -555,7 +555,7 @@ function nextAllTipElement(elem) {
   border-right: 5px solid rgba(255, 255, 255, 0.594);
   border-top: 5px solid rgba(255, 255, 255, 0.594);
   transform: rotate(135deg);
-}
+}*/
 
 @-webkit-keyframes bounce-in {
   0% {
