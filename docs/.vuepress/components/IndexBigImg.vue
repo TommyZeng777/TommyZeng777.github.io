@@ -163,15 +163,15 @@ export default {
       };
     },
     // 导航栏恢复原主题样式
-    bgBlur() {
-      let navbar = document.getElementsByClassName("navbar")[0];
-      navbar.className = "navbar blur";
-    },
+    // bgBlur() {
+    //   let navbar = document.getElementsByClassName("navbar")[0];
+    //   navbar.className = "navbar blur";
+    // },
     // 导航栏透明
-    noBgBlur() {
-      let navbar = document.getElementsByClassName("navbar")[0];
-      navbar.className = "navbar navbar1 blur";
-    },
+    // noBgBlur() {
+    //   let navbar = document.getElementsByClassName("navbar")[0];
+    //   navbar.className = "navbar navbar1 blur";
+    // },
     // 导航栏的字体颜色
     blurText(navColor = this.navColor) {
       let title = document.getElementsByClassName("site-name")[0];
@@ -188,58 +188,60 @@ export default {
       }
     },
     // 背景色随时间变化，时间提示框内容随时间变化
-    bgTimeColorAndTip() {
-      var hours = new Date().getHours();
-      var minutes = new Date().getMinutes();
-      var seconds = new Date().getSeconds();
-      hours = hours < 10 ? "0" + hours : hours;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      let div = document.createElement("div");
-      div.className = "banner-color";
-      if (hours >= 6 && hours < 11) {
-        div.style.backgroundColor = this.bgTimeColorArray[0];
-        addTip(
-          `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 12 && hours <= 16) {
-        div.style.backgroundColor = this.bgTimeColorArray[0];
-        addTip(
-          `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 16 && hours <= 19) {
-        div.style.backgroundColor = this.bgTimeColorArray[1];
-        addTip(
-          `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 19 && hours < 24) {
-        div.style.backgroundColor = this.bgTimeColorArray[2];
-        addTip(
-          `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 0 && hours < 6) {
-        div.style.backgroundColor = this.bgTimeColorArray[3];
-        addTip(
-          `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
-          "info",
-          50,
-          4000
-        );
-      }
-      document.getElementsByClassName(banner)[0].parentNode.append(div);
-    },
+    // bgTimeColorAndTip() {
+    //   var hours = new Date().getHours();
+    //   var minutes = new Date().getMinutes();
+    //   var seconds = new Date().getSeconds();
+    //   hours = hours < 10 ? "0" + hours : hours;
+    //   minutes = minutes < 10 ? "0" + minutes : minutes;
+    //   seconds = seconds < 10 ? "0" + seconds : seconds;
+    //   let div = document.createElement("div");
+    //   div.className = "banner-color";
+    //   if (hours >= 6 && hours < 11) {
+    //     div.style.backgroundColor = this.bgTimeColorArray[0];
+    //     addTip(
+    //       `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 12 && hours <= 16) {
+    //     div.style.backgroundColor = this.bgTimeColorArray[0];
+    //     addTip(
+    //       `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 16 && hours <= 19) {
+    //     div.style.backgroundColor = this.bgTimeColorArray[1];
+    //     addTip(
+    //       `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 19 && hours < 24) {
+    //     div.style.backgroundColor = this.bgTimeColorArray[2];
+    //     addTip(
+    //       `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 0 && hours < 6) {
+    //     div.style.backgroundColor = this.bgTimeColorArray[3];
+    //     addTip(
+    //       `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   }
+    //   document.getElementsByClassName(banner)[0].parentNode.append(div);
+    // },
+
+
     // 字体淡入淡出
     textFadeInAndOut(
       desc = this.desc, // 文字描述
@@ -495,15 +497,15 @@ function nextAllTipElement(elem) {
 </script>
 
 <style>
-/* 图片大小 */
+/* 图片大小 
 .vdoing-index-class .home-wrapper .banner {
   margin-top: 0 !important;
   height: 100vh;
   background-attachment: fixed !important;
-}
+}*/
 /* 图片中间的签名和标题位置 */
 .banner-conent {
-  margin-top: 23vh !important;
+  margin-top: 2vh !important;
 }
 /* 下面是配合 js 用的 class 样式 */
 .vdoing-index-class .navbar1 {
@@ -542,6 +544,7 @@ function nextAllTipElement(elem) {
   height: 20px;
   font-size: 34px;
   text-align: center;
+  -webkit-animation: bounce-in 5s 3s infinite;
   animation: bounce-in 5s 3s infinite;
   position: absolute;
   left: 50%;
@@ -572,19 +575,19 @@ function nextAllTipElement(elem) {
   width: 20px;
   height: 20px;
   display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
+  border-right: 3px solid rgba(255, 255, 255, 0.727);
+  border-top: 3px solid rgba(255, 255, 255, 0.727);
   transform: rotate(135deg);
   position: absolute;
-  bottom: 10px;
+  bottom: 13px;
 }
 .banner-arrow::after {
   content: "";
   width: 20px;
   height: 20px;
   display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
+  border-right: 3px solid rgba(255, 255, 255, 0.727);
+  border-top: 3px solid rgba(255, 255, 255, 0.727);
   transform: rotate(135deg);
 }
 /* 描述淡入淡出元素 */
