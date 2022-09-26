@@ -40,7 +40,7 @@ pageClass: vdoing-index-class
 
 ::: cardList 1   
 ```yaml
-- name: 英语专栏
+- name: 英语专栏1
   desc: 知己知彼，再战未来
   # avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: /pages/77350f/ # 可选

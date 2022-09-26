@@ -547,7 +547,7 @@ function nextAllTipElement(elem) {
   transform: rotate(135deg);
 }
 
-@-webkit-keyframes bounce-in {
+ bounce-in {
   0% {
     transform: translateY(0);
   }
@@ -563,7 +563,7 @@ function nextAllTipElement(elem) {
   to {
     transform: translateY(0);
   }
-}
+}@-webkit-keyframes
 
 /* 描述淡入淡出元素 */
 .description {
