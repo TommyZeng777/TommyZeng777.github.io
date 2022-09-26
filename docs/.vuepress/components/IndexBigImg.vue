@@ -544,8 +544,8 @@ function nextAllTipElement(elem) {
   height: 20px;
   font-size: 34px;
   text-align: center;
-  -webkit-animation: bounce-in 5s 3s infinite;
-  animation: bounce-in 5s 3s infinite;
+  -webkit-animation: bounce-in 5s 3s infinite !important;
+  animation: bounce-in 5s 3s infinite !important;
   position: absolute;
   left: 50%;
   bottom: 15%;
