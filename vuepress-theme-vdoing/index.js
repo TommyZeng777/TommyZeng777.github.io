@@ -234,7 +234,10 @@ function renderCardList(tokens, idx, type) {
 
 // 将数据解析成DOM结构 - 普通卡片列表
 function getCardListDOM(dataList, row, config) {
-  const { target = '_blank' } = config
+  const { target = '_self' } = config
+  // <${item.link ? 'a href="' + withBase(item.link) + '" target="' + target + '"' : 'span'} class="card-item ${row ? 'row-' + row : ''}"
+  //        style="${item.bgColor ? 'background-color:' + item.bgColor + ';--randomColor:' + item.bgColor + ';' : '--randomColor: var(--bodyBg);'}${item.textColor ? 'color:' + item.textColor + ';' : ''}"
+  //     >
   let listDOM = ''
   dataList.forEach(item => {
     listDOM += `
