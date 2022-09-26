@@ -524,6 +524,16 @@ function nextAllTipElement(elem) {
   bottom: 12%;*/
   /*margin-left: -10px;
 }*/
+.banner-arrow{
+  -webkit-animation: bounce-in 4s 2s infinite;
+  margin:0 auto;
+  width: 27px;
+  height: 20px;
+  margin-top: 13%;
+  display: block;
+  z-index: 10;
+  cursor: pointer;
+  }
 
 
 .banner-arrow::before {
@@ -547,7 +557,7 @@ function nextAllTipElement(elem) {
   transform: rotate(135deg);
 }
 
- bounce-in {
+@-webkit-keyframes bounce-in {
   0% {
     transform: translateY(0);
   }
@@ -563,7 +573,7 @@ function nextAllTipElement(elem) {
   to {
     transform: translateY(0);
   }
-}@-webkit-keyframes
+}
 
 /* 描述淡入淡出元素 */
 .description {
