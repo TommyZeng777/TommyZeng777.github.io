@@ -492,31 +492,199 @@ div.theme-vdoing-wrapper{
 // 下面两个是右侧目录的字体调整
 .right-menu-wrapper .right-menu-title{
   // font-family: Roboto;
-  font-size: 16pt !important;
+  font-size: 15pt !important;
   font-weight: 600;
   }
 .right-menu-wrapper .right-menu-content .right-menu-item.level1{
-  font-size: 13.5pt !important;
+  font-size: 13pt !important;
   }
 .right-menu-wrapper .right-menu-content .right-menu-item.level2{
-  font-size: 12pt !important;
+  font-size: 11pt !important;
   }
 
 
-@media only screen and (max-width: 1200px) 
-{ 
-div{
-   font-size: 13pt; 
+@media only screen and (min-width: 1200px) 
+{   
+   blockquote{
+    // border-left-width: 0.15rem;
+    
+    border-left 0.2rem solid rgba(141, 141, 141, 0.235);
+    font-size:11.5pt; 
+    
+    padding-left: 0.4rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0.4rem ;
+    margin-bottom: 1rem !important; 
    }
+  .theme-vdoing-content{  //1200px正文文本显示
+  font-size:13pt ;
+  }
+  .sidebar-group a.sidebar-link{
+    font-size:12.5pt ;
+    }
+  .sidebar-heading{
+    font-size:13.5pt !important;
+    }
+  .sidebar > .sidebar-links > li > a.sidebar-link{
+    font-size:13.5pt !important ;
+    }
+
+    //代码块优化篇
+    code, kbd, .line-number{
+    font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+    font-size:12.5pt !important;
+    font-weight: 400!important;
+    // font-size: 11pt!important;
+    line-height: 20pt !important;
+    }
+    .line-numbers-wrapper{
+    font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+    font-size:12.5pt !important;
+    // font-weight: 400!important;
+    // font-size: 11pt!important;
+    // line-height: 1.9pt;
+    }
+
 }
 @media only screen and (max-width: 1100px) { div{
-   font-size: 13px; 
-   }}
-@media only screen and (max-width: 1000px) { div{ font-size: 13px; }}
-@media only screen and (max-width: 900px) { div{ font-size: 13px; }}
-@media only screen and (max-width: 800px) { div{ font-size: 14pt; }}
-@media only screen and (max-width: 700px) { div{ font-size: 14pt; }}
-@media only screen and (max-width: 600px) { div{ font-size: 14pt; }}
+   font-size: 13px;  }
+   blockquote{
+    // border-left-width: 0.15rem;
+    
+    border-left 0.2rem solid rgba(141, 141, 141, 0.235);
+    font-size:12pt; 
+    
+    padding-left: 0.4rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0.4rem ;
+    margin-bottom: 1.7rem !important; 
+   }
+   //文章内字体显示优化（（（（（（（！！！！！！！=====！！！！！！！================）））））））））））
+  //手机端侧栏字体过小
+  
+  .sidebar .blogger .blogger-info h3{
+    font-size:18pt !important;
+    margin-bottom:0.25rem !important;
+    
+    }
+  .sidebar > .sidebar-links{
+    font-size:13pt;
+    }
+  .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
+    font-size:13 pt !important;
+    }
+  .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
+    font-size:14pt !important;
+    }
+    
+  .dropdown-wrapper .dropdown-title{  //顶栏bar ‘首页、分类、标签等’
+    font-size:11pt !important;
+    }
+  .nav-links .nav-item{               //顶栏bar ‘首页、分类、标签等’
+    font-size:11pt !important;
+    }
+
+  
+  .page h1{
+    font-size:22pt !important;
+    font-weight: 700 !important;
+    }
+  .theme-vdoing-content:not(.custom) > h2{
+    margin-top:5px  !important;
+    font-size:18pt !important;
+    font-weight: 600;
+  }
+  strong{
+    font-weight: 550;
+  }
+  .theme-vdoing-content{  //1200px正文文本显示
+    font-size:15.5pt ;
+    }
+
+  //主页文章字体显示优化
+  .cardListContainer .card-list .card-item div{//专栏板块调整======
+    font-size:17pt;
+    
+    }
+  .cardListContainer .card-list .card-item div .desc{
+      font-size:13pt !important;
+    }//==========================================================
+
+ .categories-wrapper .categories a{//底部“文章分类”和“热门标签”=========
+    font-size:12.5pt !important;
+    }
+  .categories-wrapper .title{
+    font-size:14pt !important;
+    }
+  .tags-wrapper .title{ //tag
+    font-size:14pt !important;
+    }
+  .tags-wrapper .tags a{
+    font-size:12.5pt !important;
+    font-weight: 400 !important;
+    }
+  //========================
+
+
+
+    .post-list .post{ //文章板块底栏调整——边距========
+      padding-bottom: 18px !important;
+      padding-top: 10px !important;
+      }
+    .post-list .post .excerpt-wrapper .readmore{
+      margin-top:2px !important;
+      margin-right:0px !important;
+      font-size:13pt !important;
+      }
+    .post-list .post .excerpt-wrapper{
+      margin-bottom:2px !important;
+    }
+
+
+  .post-list .post .title-wrapper h2 a{ //大标题字体优化
+    font-size:18pt;
+    font-weight: 500 !important;
+  }
+  .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{
+    font-size:10pt !important;
+    }
+  .post-list .post .excerpt-wrapper .excerpt{//文章预览字体优化
+    font-size:12.5pt !important;
+    // font-weight: 500 !important;
+    } 
+  
+
+  //代码块优化篇
+  code, kbd, .line-number{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  font-weight: 400!important;
+  // font-size: 11pt!important;
+  line-height: 20pt !important;
+  }
+  .line-numbers-wrapper{
+  font-family: "Fira Sans", monospace, Consolas, source-code-pro;//解决办法
+  font-size:13pt !important;
+  // font-weight: 400!important;
+  // font-size: 11pt!important;
+  // line-height: 1.9pt;
+  }
+
+   }
+
+
+
+
+
+
+
+   
+
+@media only screen and (max-width: 950px) { div{ font-size: 13px; }}
+
+
 
 //500px宽度
 @media only screen and (max-width: 500px) { div{ font-size: 14.5pt; }
@@ -619,7 +787,7 @@ div{
 
 
   .post-list .post{ //文章板块底栏调整——边距========
-    padding-bottom: 8px !important;
+    padding-bottom: 16px !important;
     }
   .post-list .post .title-wrapper h2 a{ //大标题字体优化
     font-size:20pt;
@@ -632,11 +800,21 @@ div{
     font-size:13pt !important;
     // font-weight: 500 !important;
     } 
-  .post-list .post .excerpt-wrapper .readmore{
-    margin-top:10px;
-    margin-right:0px !important;
-    font-size:13pt !important;
+
+    // 主页文章container优化
+   .post-list .post{ //文章板块底栏调整——边距========
+      padding-bottom: 16px !important;
+      padding-top: 10px !important;
+      }
+    .post-list .post .excerpt-wrapper .readmore{
+      margin-top:2px !important;
+      margin-right:0px !important;
+      font-size:13pt !important;
+      }
+    .post-list .post .excerpt-wrapper{
+      margin-bottom:2px !important;
     }
+    //=====================
 
   //代码块优化篇
   code, kbd, .line-number{
@@ -785,10 +963,18 @@ div{
     font-size:13pt !important;
     // font-weight: 500 !important;
     } 
-  .post-list .post .excerpt-wrapper .readmore{
-    margin-top:10px;
-    margin-right:0px !important;
-    font-size:13pt !important;
+
+   .post-list .post{ //文章板块底栏调整——边距========
+      padding-bottom: 16px !important;
+      padding-top: 10px !important;
+      }
+    .post-list .post .excerpt-wrapper .readmore{
+      margin-top:10px !important;
+      margin-right:0px !important;
+      font-size:13pt !important;
+      }
+    .post-list .post .excerpt-wrapper{
+      margin-bottom:2px !important;
     }
 
   //代码块优化篇
@@ -809,19 +995,18 @@ div{
 }
 
 //!!!!!!320px宽度的屏幕
-@media only screen and (max-width: 320px) { div { 
+@media only screen and (max-width: 325px) { div { 
   font-size: 15.5pt ;}
   blockquote{
     border-left 0.15rem solid rgba(141, 141, 141, 0.235);
     font-size:13pt; 
     margin-top: 0.8rem;
-    margin-bottom: 3rem !important; 
     padding-left: 0.3rem !important;
     // border-left-width: 0.1rem;
     
     padding-top: 0rem !important;
     margin-top: 0.4rem ;
-    margin-bottom: 2.5rem !important; 
+    margin-bottom: 2rem !important; 
    }
    .home-wrapper .banner .banner-conent .hero h1{
     font-size: 1.8em !important;
@@ -858,9 +1043,19 @@ div{
   .dropdown-wrapper .nav-dropdown .dropdown-item h4, .dropdown-wrapper .nav-dropdown .dropdown-item > a{
     font-size:13 pt !important;
     }
+
   .sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link{
     font-size:14pt !important;
+    // font-weight: 300 !important;
     }
+  .sidebar .nav-links a{
+    font-weight: 450 !important;
+    }
+  .dropdown-wrapper .dropdown-title{
+    font-weight: 450 !important;
+    }
+
+
   .dropdown-wrapper .dropdown-title{  //汉堡菜单侧拉栏展开菜单字体优化
     font-size:14pt !important;
     }
@@ -911,9 +1106,13 @@ div{
   .post-list .post{ //文章板块底栏调整——边距========
     padding-bottom: 8px !important;
     }
+  .post-list .post .title-wrapper h2{
+    margin-bottom:0px !important;
+    }
   .post-list .post .title-wrapper h2 a{ //大标题字体优化
     font-size:20pt;
     font-weight: 500 !important;
+    
   }
   .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{
     font-size:10pt !important;
@@ -922,10 +1121,17 @@ div{
     font-size:13pt !important;
     // font-weight: 500 !important;
     } 
-  .post-list .post .excerpt-wrapper .readmore{
-    margin-top:10px;
-    margin-right:0px !important;
-    font-size:13pt !important;
+   .post-list .post{ //文章板块底栏调整——边距========
+      padding-bottom: 18px !important;
+      padding-top: 10px !important;
+      }
+    .post-list .post .excerpt-wrapper .readmore{
+      margin-top:2px !important;
+      margin-right:0px !important;
+      font-size:13pt !important;
+      }
+    .post-list .post .excerpt-wrapper{
+      margin-bottom:2px !important;
     }
 
   //代码块优化篇
