@@ -2,10 +2,10 @@
 home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
-# Internationale
-heroText: Learning Corner
+#         Internationale
+heroText: LearningCorner
 # tagline: 心齐方可成龙
-tagline: 今天进步了不？
+tagline: 今天进步了不
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
