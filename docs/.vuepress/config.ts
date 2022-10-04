@@ -430,7 +430,8 @@
      [
        "md-enhance",
        {
-         enableAll: true,
+        //  enableAll: true,
+         mermaid: true,
          // 配置选项
        },
      ],
