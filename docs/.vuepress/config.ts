@@ -101,7 +101,7 @@
        },
  
        { text: '📌标签', link: '/tags/' },
-       { text: '📦归档', link: '/archives/' },
+       { text: '🕒时光机', link: '/archives/' },
        
        
        // {
@@ -137,7 +137,7 @@
  
        {
          text: '✏️关于',
-         link: '/pages/1b697e/',
+         link: '/pages/9d57fc/',
          items: [
            { text: '我的', link: '/pages/1b697e/' },
            { text: '网站', link: '/pages/f97811/'},
