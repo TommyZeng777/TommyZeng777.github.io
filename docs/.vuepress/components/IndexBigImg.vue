@@ -524,8 +524,10 @@ function nextAllTipElement(elem) {
   bottom: 12%;*/
   /*margin-left: -10px;
 }*/
+
+/*-webkit-*/
 .banner-arrow{
-  -webkit-animation: bounce-in 4s 2s infinite;
+  animation: bounce-in 4s 2s infinite;
   margin:0 auto;
   width: 33px;
   height: 20px;
@@ -544,20 +546,22 @@ function nextAllTipElement(elem) {
   border-right: 5px solid rgba(255, 255, 255, 0.594);
   border-top: 5px solid rgba(255, 255, 255, 0.594);
   transform: rotate(135deg);
-  position: absolute;
-  bottom: 10px;
+  
 }
 .banner-arrow::after {
   content: "";
   width: 30px;
   height: 30px;
-  display: block;
+  
   border-right: 5px solid rgba(255, 255, 255, 0.594);
   border-top: 5px solid rgba(255, 255, 255, 0.594);
   transform: rotate(135deg);
+  position: absolute;
+  bottom: 10px;
 }
 
-@-webkit-keyframes bounce-in {
+/*@-webkit-keyframes*/
+@keyframes bounce-in {
   0% {
     transform: translateY(0);
   }

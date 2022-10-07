@@ -437,14 +437,19 @@ code, kbd, .line-number{
 
 // 首页专栏区边距修改
 .cardListContainer{
-  padding-top: 0.2rem !important;
-  padding-bottom: 0.2rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-top:10px ;
+  }
+//头像区配合沉降
+.main-wrapper .main-right .card-box{
+  margin-top:10px !important;
   }
 
 .main-wrapper .main-left .theme-vdoing-content.card-box{
   padding-left: 0.6rem !important;
   padding-right: 0.6rem !important;
-  margin-bottom: 1.6rem !important;
+  margin-bottom: 0.4rem !important;
   }
 
 
@@ -508,6 +513,9 @@ div.theme-vdoing-wrapper{
   }
 
 
+
+
+
 @media only screen and (min-width: 1200px) 
 {   
    blockquote{
@@ -522,6 +530,27 @@ div.theme-vdoing-wrapper{
     margin-top: 0.4rem ;
     margin-bottom: 1rem !important; 
    }
+
+// 专栏背景隐藏套件
+  .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top:0px !important;
+    }
+  .main-wrapper .main-left .theme-vdoing-content.card-box{
+    background-color:rgba(255, 255, 255, 0); 
+    }
+  .card-box:hover{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .card-box{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .cardListContainer .card-list .card-item{
+    border-radius: 10px !important;
+    }
+
+
   .theme-vdoing-content{  //1200px正文文本显示
   font-size:12pt ;
   }
@@ -571,6 +600,30 @@ div.theme-vdoing-wrapper{
    //文章内字体显示优化（（（（（（（！！！！！！！=====！！！！！！！================）））））））））））
   //手机端侧栏字体过小
   
+
+  // 专栏背景隐藏套件
+  .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top:0px !important;
+    }
+  .main-wrapper .main-left .theme-vdoing-content.card-box{
+    background-color:rgba(255, 255, 255, 0); 
+    }
+  .card-box:hover{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .card-box{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .cardListContainer .card-list .card-item{
+    border-radius: 10px !important;
+    }
+
+
+
+
+
   .sidebar .blogger .blogger-info h3{
     font-size:18pt !important;
     margin-bottom:0.25rem !important;
@@ -689,7 +742,30 @@ div.theme-vdoing-wrapper{
 
    
 
-@media only screen and (max-width: 950px) { div{ font-size: 13px; }}
+@media only screen and (max-width: 950px) {
+   div{ font-size: 13px; }
+   // 专栏背景隐藏套件
+  .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top:0px !important;
+    }
+  .main-wrapper .main-left .theme-vdoing-content.card-box{
+    background-color:rgba(255, 255, 255, 0); 
+    }
+  .card-box:hover{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .card-box{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .cardListContainer .card-list .card-item{
+    border-radius: 10px !important;
+    }
+
+  }
+
+
 
 
 
@@ -716,6 +792,60 @@ div.theme-vdoing-wrapper{
   .banner-arrow{
     margin-top: 90% !important;
     }
+
+
+  // 专栏背景隐藏套件(移动端专项适配(横向分辨率小于500px适用)) 
+  .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
+    // padding-left: 8pt !important;
+    // padding-right: 8pt !important;
+    padding-top:0px !important;
+    }
+  .main-wrapper .main-left .theme-vdoing-content.card-box{
+    background-color:rgba(255, 255, 255, 0); 
+    }
+  .card-box:hover{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .card-box{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .cardListContainer .card-list .card-item{
+    border-radius: 10px !important;
+    }
+  .post-list .post{
+    // margin-left: 8pt !important;
+    // margin-right: 8pt !important;
+    border-radius: 10px !important;
+    }
+
+  .main-wrapper .main-right{
+    // margin-left: 8pt !important;
+    // margin-right: 8pt !important;
+    }
+  .main-wrapper .main-right .card-box{
+    border-radius: 10px !important;
+    }
+
+  .home-wrapper .main-wrapper{
+    margin-left: 8pt !important;
+    margin-right: 8pt !important;
+    }
+  .home-wrapper .main-wrapper .main-left .pagination{
+    margin-left: 8pt !important;
+    margin-right: 8pt !important;
+    }
+  .pagination > span{
+    padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+    }
+  .pagination > span{
+    padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+    }
+
+
+
+  
   //手机Logo替代汉堡菜单按钮解决方案
   .sidebar-button{
       opacity:0;
@@ -868,6 +998,13 @@ div.theme-vdoing-wrapper{
   .banner-arrow{
     margin-top: 75% !important;
     }
+
+  
+
+
+
+
+
 
   //手机Logo替代汉堡菜单按钮解决方案===
   .sidebar-button{
