@@ -525,7 +525,7 @@ function nextAllTipElement(elem) {
   /*margin-left: -10px;
 }*/
 
-/*-webkit-*/
+/*原版写的是-webkit-animation，经过测试，并不需要webkit，反而用了webkit会导致动画不动的问题*/
 .banner-arrow{
   animation: bounce-in 4s 2s infinite;
   margin:0 auto;
