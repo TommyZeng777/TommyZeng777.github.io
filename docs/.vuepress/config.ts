@@ -50,7 +50,7 @@
        // 这里的数据结构是：text是对象文本信息，link是相对路径
        //每一个"{}"括号内的信息都是一个模块，指向一个生成的文件
        // { text: '导航', link: '/navigation/'},
-       { text: '🎈首页', link: '/',  },  
+       { text: '🛖首页', link: '/',  },  
        
  
        {
@@ -61,82 +61,15 @@
           { text: '02-英语学习', link: '/pages/77350f/' },
           { text: '09-静态博客知识分享', link: '/pages/9d57fc/'},
         ]
-         // items项目可以实现鼠标悬停时显示二级导航菜单，此处items是一个数组，每一项是一个对象
-         // 对象的属性有text和link，items可以套娃两层，以实现二级菜单中的分级
-        //  items: [
-           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-           // {
-           //   text: '前端文章',
-           //   items: [
-           //     { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-           //   ],
-           // },
-           // {
-           //   text: '学习笔记',
-           //   items: [
-           //     { text: '《JavaScript教程》', link: '/note/javascript/' },
-           //     { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-           //     { text: '《ES6 教程》', link: '/note/es6/' },
-           //     { text: '《Vue》', link: '/note/vue/' },
-           //     { text: '《React》', link: '/note/react/' },
-           //     {
-           //       text: '《TypeScript 从零实现 axios》',
-           //       link: '/note/typescript-axios/',
-           //     },
-           //     {
-           //       text: '《Git》',
-           //       link: '/note/git/',
-           //     },
-           //     {
-           //       text: 'TypeScript',
-           //       link: '/pages/51afd6/',
-           //     },
-           //     {
-           //       text: 'JS设计模式总结',
-           //       link: '/pages/4643cd/',
-           //     },
-           //   ],
-           // },
-        //  ],
+        
        },
  
-       { text: '📌标签', link: '/tags/' },
-       { text: '🕒时光机', link: '/archives/' },
+       { text: '📌Tag', link: '/tags/' },
+       { text: '🕒时间轴', link: '/archives/' },
        
        
-       // {
-       //   text: '页面',
-       //   link: '/ui/',
-       //   items: [
-       //     { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-       //     { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-       //   ],
-       // },
-       // {
-       //   text: '技术',
-       //   link: '/technology/',
-       //   items: [
-       //     { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-       //     { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-       //     { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-       //     { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
-       //   ],
-       // },
- 
-       // {
-       //   text: '更多',
-       //   link: '/more/',
-       //   items: [
-       //     { text: '学习', link: '/pages/f2a556/' },
-       //     { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-       //     { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-       //     { text: '实用技巧', link: '/pages/baaa02/' },
-       //     { text: '友情链接', link: '/friends/' },
-       //   ],
-       // },
- 
        {
-         text: '✏️关于',
+         text: '✏️About',
          link: '/pages/9d57fc/',
          items: [
            { text: '我的', link: '/pages/1b697e/' },
