@@ -583,7 +583,7 @@ div.theme-vdoing-wrapper{
 
 
 }
-@media only screen and (max-width: 1100px) { div{
+@media only screen and (max-width: 1199px) { div{
    font-size: 13px;  }
    blockquote{
     // border-left-width: 0.15rem;
@@ -600,6 +600,28 @@ div.theme-vdoing-wrapper{
    //文章内字体显示优化（（（（（（（！！！！！！！=====！！！！！！！================）））））））））））
   //手机端侧栏字体过小
   
+  .banner-arrow{
+    margin-top: 30vh !important;
+    }
+
+// 专栏背景隐藏套件
+  .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top:0px !important;
+    }
+  .main-wrapper .main-left .theme-vdoing-content.card-box{
+    background-color:rgba(255, 255, 255, 0); 
+    }
+
+  .card-box:hover,
+  .card-box{
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
+    }
+  .cardListContainer .card-list .card-item{
+    border-radius: 10px !important;
+    }
+
 
   // 专栏背景隐藏套件
   .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
@@ -766,11 +788,8 @@ div.theme-vdoing-wrapper{
   }
 
 
-
-
-
 //500px宽度
-@media only screen and (max-width: 500px) { div{ font-size: 14.5pt; }
+@media only screen and (max-width: 550px) { div{ font-size: 14.5pt; }
   blockquote{
     // border-left-width: 0.15rem;
     
@@ -790,62 +809,68 @@ div.theme-vdoing-wrapper{
     font-size: 2.3em !important;
     }
   .banner-arrow{
-    margin-top: 90% !important;
+    margin-top: 40vh !important;
     }
 
 
   // 专栏背景隐藏套件(移动端专项适配(横向分辨率小于500px适用)) 
   .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
-    // padding-left: 8pt !important;
-    // padding-right: 8pt !important;
     padding-top:0px !important;
     }
   .main-wrapper .main-left .theme-vdoing-content.card-box{
     background-color:rgba(255, 255, 255, 0); 
     }
-  .card-box:hover{
-    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
-    }
+  .card-box:hover,
   .card-box{
     box-shadow: 0px 0px 4px 0 rgba(0,0,0,0) !important;
     }
-  .cardListContainer .card-list .card-item{
-    border-radius: 10px !important;
-    }
-  .post-list .post{
-    // margin-left: 8pt !important;
-    // margin-right: 8pt !important;
-    border-radius: 10px !important;
-    }
-
-  .main-wrapper .main-right{
-    // margin-left: 8pt !important;
-    // margin-right: 8pt !important;
-    }
+  .cardListContainer .card-list .card-item,
+  .post-list .post,
   .main-wrapper .main-right .card-box{
     border-radius: 10px !important;
     }
 
-  .home-wrapper .main-wrapper{
+  .home-wrapper .main-wrapper,
+  .main-wrapper{
+    margin-left: 14pt !important;
+    margin-right: 14pt !important;
+    }
+  //翻页按钮
+  .home-wrapper .main-wrapper .main-left .pagination,
+  .pagination
+  {
     margin-left: 8pt !important;
     margin-right: 8pt !important;
     }
-  .home-wrapper .main-wrapper .main-left .pagination{
-    margin-left: 8pt !important;
-    margin-right: 8pt !important;
-    }
-  .pagination > span{
-    padding-right: 0.8rem !important;
-    padding-left: 0.8rem !important;
-    }
-  .pagination > span{
-    padding-right: 0.8rem !important;
-    padding-left: 0.8rem !important;
-    }
-
-
-
   
+  .pagination > span{
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+    }
+  // .article-list{
+  //   border-radius: 10px !important;
+  //   margin-left: 12pt !important;
+  //   margin-right: 12pt !important;
+  //   }
+  
+  .page >*{
+    border-radius: 10px !important;
+    margin-left: 14pt !important;
+    margin-right: 14pt !important;
+    }
+  .theme-vdoing-wrapper {
+    border-radius: 0px !important;
+    margin-left: 0pt !important;
+    margin-right: 0pt !important;
+    }
+    
+  .categories-page .main-left .categories-wrapper,
+  .tags-page .main-left .tags-wrapper{
+    border-radius: 10px !important;
+    }
+  
+
+
   //手机Logo替代汉堡菜单按钮解决方案
   .sidebar-button{
       opacity:0;
