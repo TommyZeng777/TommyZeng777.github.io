@@ -512,14 +512,131 @@ div.theme-vdoing-wrapper{
   margin-right: 0px !important;
   }
 
-.nav-item > a:not(.external):hover, 
-.nav-item .dropdown-title a:hover, 
-.nav-item > a:not(.external).router-link-active,
-.nav-item .dropdown-title a.router-link-active,
-  {
-  // border-bottom: 2.3pt solid #13b9e2 !important;
+
+
+
+@media only screen and (min-width: 719px) {
+
   
+  
+  
+  
+  // {
+  // border-bottom: 2pt solid #13b9e2 !important;
+  // }
+
+  //.nav-item .dropdown-title a.router-link-active,//====展开标题栏hover下划线动画==============
+  //.nav-item .dropdown-title a:hover::after,
+  //.nav-item > a:not(.external).router-link-active//========主页等非展开标题栏hover下划线动画========
+  
+  .nav-item > a:not(.external).router-link-active,
+  .nav-item .dropdown-title a.router-link-active,{
+    display: inline-block;
+  // position: relative;
+  color: #11a8cd; 
+    border-bottom: 0pt solid #13b9e2 !important;
+
+    }
+  .nav-item > a:not(.external):hover,
+  .nav-item .dropdown-title a:hover, {
+    border-bottom: 0pt solid #13b9e2 !important;
+    }
+  .nav-item > a:not(.external)::after,
+  {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2pt;
+    bottom: 0;
+    left: 0;
+    border-radius:1.5px;
+    background-color: #11a8cd;
+    transform-origin: bottom middle;
+    transition: transform 0.25s ease-out;
+    }
+    
+  .nav-item > a:not(.external):hover::after,
+  {
+    transform: scaleX(1);
+    transform-origin: bottom middle;
+    }
+
+
+
+  //==========================文章文字控制
+  .post-list .post .title-wrapper h2 a{
+    display: inline-block;
+    position: relative;
+    // color: #000000;
+    
+    }
+  .post-list .post .title-wrapper h2 a:hover{
+    color: #11a8cd;
+    }  
+  .post-list .post .title-wrapper a::after,
+  {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2pt;
+    bottom: -4pt;
+    left: 0;
+    border-radius:1pt;
+    background-color: #11a8cd;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+    
+    }
+  .post-list .post .title-wrapper a:hover::after{
+    
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      
+    }
+
+  //tag的屎山bug修复方法，重复弄一个，并赋予0宽度
+  .post-list .post .title-wrapper .article-info > a a, .post-list .post .title-wrapper .article-info > span a{
+    display: inline-block;
+    position: relative;
+    // color: #000000;
+    }
+  .post-list .post .title-wrapper .article-info > a a, .post-list .post .title-wrapper .article-info > span a:hover{
+    color: #11a8cd;
+    }  
+  .post-list .post .title-wrapper .article-info > a a, .post-list .post .title-wrapper .article-info > span a::after,
+  {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0px;
+    bottom: -4pt;
+    left: 0;
+    border-radius:1.5px;
+    background-color: #11a8cd;
+    transform-origin: bottom middle;
+    transition: transform 0.5s ease-out;
+    
+    }
+
+  .post-list .post .title-wrapper .article-info > a a, .post-list .post .title-wrapper .article-info > span a:hover::after{
+          transform: scaleX(1);
+      transform-origin: bottom middle;
+    }
+
   }
+
+ 
+
+
+
+
+
+
 
 
 

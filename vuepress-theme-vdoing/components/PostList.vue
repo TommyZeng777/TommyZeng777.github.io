@@ -207,7 +207,7 @@ export default {
           transform translate(0, -0.15rem)
           display inline-block
         a
-          display block
+          display inline/*原来是：display block*/
           @media (max-width $MQMobile)
             font-weight 400
       .article-info
