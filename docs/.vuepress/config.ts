@@ -47,9 +47,7 @@
      
      // 导航栏配置
      nav: [
-       // 这里的数据结构是：text是对象文本信息，link是相对路径
-       //每一个"{}"括号内的信息都是一个模块，指向一个生成的文件
-       // { text: '导航', link: '/navigation/'},
+       
        { text: '🛖首页', link: '/',  },  
        
  
@@ -91,7 +89,7 @@
      lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
      docsDir: 'docs', // 编辑的文件夹
      editLinks: true, // 启用编辑
-     editLinkText: '编辑',
+     editLinkText: '在线编辑',
  
      //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
      //分类页的数据信息在docs/@pages文件夹里，信息是在front matter里标注的，示例如下
@@ -207,10 +205,10 @@
        'meta',
        {
          name: 'keywords',
-         content: 'Javascript,CSS,HTML5,Markdown,C++',
+         content: '学习, Javascript, CSS, HTML5, Markdown, C++, Vue',
        },
      ],
-     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    //  ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
      ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
      // [
      //   'script',
@@ -379,7 +377,7 @@
  
    markdown: {
      lineNumbers: true,
-     extractHeaders: ['h2', 'h3'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+     extractHeaders: ['h2', 'h3', 'h4'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
    },
  
    // 监听文件变化并重新构建
