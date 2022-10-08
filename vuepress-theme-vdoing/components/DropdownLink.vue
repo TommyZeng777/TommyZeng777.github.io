@@ -137,13 +137,14 @@ export default {
         .dropdown-subitem
           font-size 0.9em
       a
-        display block
+        display inline
         line-height 1.7rem
         position relative
         border-bottom none
         font-weight 400
         margin-bottom 0
-        padding 0 1.5rem 0 1.25rem
+        padding 0 0rem 0 0rem
+        margin 0 1rem 0 1rem
         &:hover
           color $accentColor
         &.router-link-active

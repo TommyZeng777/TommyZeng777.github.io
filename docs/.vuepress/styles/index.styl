@@ -517,14 +517,6 @@ div.theme-vdoing-wrapper{
 
 @media only screen and (min-width: 719px) {
 
-  
-  
-  
-  
-  // {
-  // border-bottom: 2pt solid #13b9e2 !important;
-  // }
-
   //.nav-item .dropdown-title a.router-link-active,//====展开标题栏hover下划线动画==============
   //.nav-item .dropdown-title a:hover::after,
   //.nav-item > a:not(.external).router-link-active//========主页等非展开标题栏hover下划线动画========
@@ -532,7 +524,7 @@ div.theme-vdoing-wrapper{
   .nav-item > a:not(.external).router-link-active,
   .nav-item .dropdown-title a.router-link-active,{
     display: inline-block;
-  // position: relative;
+  position: relative;
   color: #11a8cd; 
     border-bottom: 0pt solid #13b9e2 !important;
 
@@ -542,13 +534,14 @@ div.theme-vdoing-wrapper{
     border-bottom: 0pt solid #13b9e2 !important;
     }
   .nav-item > a:not(.external)::after,
+  .dropdown-wrapper .nav-dropdown .dropdown-item a::after,
   {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2pt;
-    bottom: 0;
+    bottom: -2pt;
     left: 0;
     border-radius:1.5px;
     background-color: #11a8cd;
@@ -557,6 +550,7 @@ div.theme-vdoing-wrapper{
     }
     
   .nav-item > a:not(.external):hover::after,
+  .dropdown-wrapper .nav-dropdown .dropdown-item a:hover::after,
   {
     transform: scaleX(1);
     transform-origin: bottom middle;
