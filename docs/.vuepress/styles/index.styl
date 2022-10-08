@@ -520,21 +520,44 @@ div.theme-vdoing-wrapper{
   //.nav-item .dropdown-title a.router-link-active,//====展开标题栏hover下划线动画==============
   //.nav-item .dropdown-title a:hover::after,
   //.nav-item > a:not(.external).router-link-active//========主页等非展开标题栏hover下划线动画========
+  .nav-link.router-link-exact-active.router-link-active::after{
+    // background-color: rgba(255, 255, 255, 0)!important;
+    z-index :-1;
+      }
+  //.dropdown-wrapper .nav-dropdown .dropdown-item a //====下拉菜单细节章节选项
   
+
   .nav-item > a:not(.external).router-link-active,
-  .nav-item .dropdown-title a.router-link-active,{
-    display: inline-block;
-  position: relative;
+  .nav-item .dropdown-title a.router-link-active,
+ 
+  {
+  display: inline-block;
+  // position: relative;
   color: #11a8cd; 
     border-bottom: 0pt solid #13b9e2 !important;
 
     }
   .nav-item > a:not(.external):hover,
-  .nav-item .dropdown-title a:hover, {
+  .nav-item .dropdown-title a:hover, 
+  {
     border-bottom: 0pt solid #13b9e2 !important;
     }
-  .nav-item > a:not(.external)::after,
-  .dropdown-wrapper .nav-dropdown .dropdown-item a::after,
+
+  .nav-item > a:not(.external)::after,//非折叠
+  {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2pt;
+    bottom: 0pt;
+    left: 0;
+    border-radius:1.5px;
+    background-color: #11a8cd;
+    transform-origin: bottom middle;
+    transition: transform 0.25s ease-out;
+    }
+   .dropdown-wrapper .nav-dropdown .dropdown-item a::after,//非折叠
   {
     content: '';
     position: absolute;
@@ -548,15 +571,39 @@ div.theme-vdoing-wrapper{
     transform-origin: bottom middle;
     transition: transform 0.25s ease-out;
     }
-    
+
+
+
+   .nav-item .dropdown-title a::after,{//折叠
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2pt;
+    bottom: 2pt;
+    left: 0;
+    border-radius:1.5px;
+    background-color: #11a8cd;
+    transform-origin: bottom middle;
+    transition: transform 0.25s ease-out;
+    } 
+
   .nav-item > a:not(.external):hover::after,
   .dropdown-wrapper .nav-dropdown .dropdown-item a:hover::after,
   {
     transform: scaleX(1);
     transform-origin: bottom middle;
     }
+  .nav-item .dropdown-title a:hover::after,{
+    transform: scaleX(1);
+    transform-origin: bottom middle;
+    }
 
-
+  .dropdown-wrapper .nav-dropdown{//展开菜单沉降
+    // margin-top: 2pt !important;
+    // transform: translateX(1vh) !important;
+    // align-items: center !important;
+    }
 
   //==========================文章文字控制
   .post-list .post .title-wrapper h2 a{

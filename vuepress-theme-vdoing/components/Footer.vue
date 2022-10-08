@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="icons" v-if="social && social.icons">
+    <!-- <div class="icons" v-if="social && social.icons">
       <a
         :href="item.link"
         :title="item.title"
@@ -9,7 +9,7 @@
         :key="index"
         target="_blank"
       ></a>
-    </div>
+    </div> -->
 
     <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
     Theme by
