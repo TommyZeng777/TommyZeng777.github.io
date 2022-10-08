@@ -64,12 +64,12 @@
         
        },
  
-       { text: '📌Tag', link: '/tags/' },
+       { text: '🔖Tag', link: '/tags/' },
        { text: '🕒时间轴', link: '/archives/' },
        
        
        {
-         text: '✏️About',
+         text: '📺About',
          link: '/pages/9d57fc/',
          items: [
            { text: '我的', link: '/pages/1b697e/' },
