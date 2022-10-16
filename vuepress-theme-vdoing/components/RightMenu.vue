@@ -113,7 +113,7 @@ export default {
         &:before
           content ''
           position absolute
-          top 5px
+          top 7px
           left 0
           width 3px
           height 14px
