@@ -80,12 +80,12 @@
      // 侧边栏配置
      sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
      logo: '/img/无底logo.svg', // 导航栏logo
-    //  repo: 'TommyZeng777/TommyZeng777.github.io', // 导航栏右侧生成Github链接
+     repo: 'TommyZeng777/TommyZeng777.github.io', // 导航栏右侧生成Github链接
      searchMaxSuggestions: 10, // 搜索结果显示最大数
      lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
      docsDir: 'docs', // 编辑的文件夹
      editLinks: true, // 启用编辑
-     editLinkText: '在线编辑',
+     editLinkText: '编辑',
  
      //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
      //分类页的数据信息在docs/@pages文件夹里，信息是在front matter里标注的，示例如下
@@ -148,7 +148,7 @@
      blogger: {
        avatar: 'https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
        name: 'Tommy',
-       slogan: '努力学习，缩小差距',
+       slogan: '喜迎二十大，奋进新征程',
      },
  
      // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
