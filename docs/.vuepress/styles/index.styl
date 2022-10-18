@@ -236,39 +236,14 @@ body .vuepress-plugin-demo-block__wrapper
   display:inline-block; 
   }
 
-.page h2{
-  // margin-bottom: 3px!important;
-  }
 
 .md-mermaid{
   margin-left: 0rem!important;
   margin-right: 0rem!important;
   }
 
-.theme-vdoing-content div[class*="language-"]{
-  margin-left: 0rem!important;
-  margin-right: 0rem!important;
-  }
-
-.theme-vdoing-content:not(.custom) img{
-  margin-bottom: 0rem;
-  margin-top: 0rem;
-  }
-
-.theme-vdoing-content:not(.custom) > p:first-child, .theme-vdoing-content:not(.custom) > pre:first-child, .theme-vdoing-content:not(.custom) > .custom-block:first-child{
-  margin-top: 0.5rem!important;
-  }
-
-.theme-vdoing-content:not(.custom) > h3{
-  
-  }
 
 
-//文本上下间距
-p{
-  margin-top:0.3em;
-  margin-bottom:0.5em;
-}
 
 a.repo-link{
   display: none !important;
@@ -282,10 +257,7 @@ a.repo-link{
 //   padding-top: 1rem;
 //   }
 
-// 文字行高
-// p, ul, ol{
-//   line-height: 1.7!important;
-//   }
+
 
 // container group-item 样式修改
 .code-group-item{
@@ -535,6 +507,17 @@ div.theme-vdoing-wrapper{
 
 @media only screen and (min-width: 719px) {
 
+  //文本上下间距
+  p{
+    margin-top:0.3em;
+    margin-bottom:0.5em;
+  }
+
+  //序列文本的边距
+  ul, ol{
+    padding-left 2em;
+  }
+  
   //.nav-item .dropdown-title a.router-link-active,//====展开标题栏hover下划线动画==============
   //.nav-item .dropdown-title a:hover::after,
   //.nav-item > a:not(.external).router-link-active//========主页等非展开标题栏hover下划线动画========
@@ -700,8 +683,13 @@ div.theme-vdoing-wrapper{
 
 
 
-@media only screen and (min-width: 1200px) 
-{   
+@media only screen and (min-width: 1200px) {
+
+
+   .cardListContainer .card-list .card-item div p{
+    font-size: 14pt;
+    font-weight: 500;
+    }     
    blockquote{
     // border-left-width: 0.15rem;
     
@@ -768,8 +756,8 @@ div.theme-vdoing-wrapper{
 
 
 }
-@media only screen and (max-width: 1199px) { div{
-   font-size: 13px;  }
+@media only screen and (max-width: 1199px) { 
+  // div{font-size: 13px;  }
    blockquote{
     // border-left-width: 0.15rem;
     
@@ -950,7 +938,7 @@ div.theme-vdoing-wrapper{
    
 
 @media only screen and (max-width: 950px) {
-   div{ font-size: 13px; }
+  //  div{ font-size: 13px; }
    // 专栏背景隐藏套件
   .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
     padding-left: 0px !important;
@@ -974,7 +962,24 @@ div.theme-vdoing-wrapper{
 
 
 //500px宽度
-@media only screen and (max-width: 550px) { div{ font-size: 14.5pt; }
+@media only screen and (max-width: 550px) { 
+  // div{ font-size: 14.5pt; }
+  //表格字体  
+  tr{
+    font-size:13pt ;
+  }
+  //文本上下间距
+  p{
+    margin-top:0.7em;
+    margin-bottom:0.9em;
+  }
+
+  //序列文本的边距
+  ul, ol{
+    padding-left 1em;
+  }
+
+
   blockquote{
     // border-left-width: 0.15rem;
     
@@ -1154,7 +1159,7 @@ div.theme-vdoing-wrapper{
       padding-top: 16px !important;
       }
     .post-list .post .excerpt-wrapper .readmore{
-      margin-top:2px !important;
+      margin-top:0px !important;
       margin-right:0px !important;
       font-size:13pt !important;
       }
@@ -1184,7 +1189,7 @@ div.theme-vdoing-wrapper{
 
 //400px=============================================================================400px 
 @media only screen and (max-width: 400px) { 
-  div{ font-size: 15pt; }
+  // div{ font-size: 14pt; }
   
   // 注释栏的样式优化
   blockquote{
@@ -1269,18 +1274,20 @@ div.theme-vdoing-wrapper{
   strong{
     font-weight: 650;
   }
+
   .theme-vdoing-content{  //400px文章正文字体调整
     font-size:14pt ;
     // font-weight: 500;
-    
     }
-  p, ul, ol{
-    // line-height: 1.5 !important;
+  //表格字体  
+  tr{
+    font-size:12pt ;
   }
+  
 
   //主页文章字体显示优化
   .cardListContainer .card-list .card-item div{//专栏板块调整======
-    font-size:18pt;
+    font-size:17pt;
     
     }
   .cardListContainer .card-list .card-item div .desc{
@@ -1324,7 +1331,7 @@ div.theme-vdoing-wrapper{
       // padding-top: 16px !important;
       }
     .post-list .post .excerpt-wrapper .readmore{
-      margin-top:10px !important;
+      // margin-top:10px !important;
       margin-right:0px !important;
       font-size:13pt !important;
       }
