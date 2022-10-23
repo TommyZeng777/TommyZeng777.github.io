@@ -3,13 +3,13 @@ home: true  # 协商true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
 #         Internationale
-heroText: Learning Corner
+heroText: Internationale
 # tagline: 心齐方可成龙
-tagline: 今天进步了不
+tagline: 每天进步一点
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202209200031954.jpg"
+bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202210232227688.jpg"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
