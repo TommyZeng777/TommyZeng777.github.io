@@ -9,7 +9,7 @@ tagline: 每天进步一点
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: "https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202301050749988.jpg"
+bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202301100635616.jpg"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
@@ -44,19 +44,19 @@ pageClass: vdoing-index-class
 ```yaml
 - name: 英语专栏
   desc: 知己知彼，再战未来
-  # avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
+  # avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: /pages/77350f/ # 可选
   bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: '#6854A1' # 可选，默认var(--textColor)
 - name: 考研专栏
   desc: 小胖读研去
-  # avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+  # avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
   link: /pages/82ac8b/
   bgColor: '#718971'
   textColor: '#fff'
 # - name: 编程小白
 #   desc: 只写小白能看懂的编程教学
-#   # avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+#   # avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
 #   link: /pages/56ab3e/
 #   bgColor: '#718971'
 #   textColor: '#fff'
@@ -71,24 +71,24 @@ pageClass: vdoing-index-class
 
 <!-- ::: cardImgList
 ```yaml
-- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
+- img: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容 # 描述，可选
   author: Evan Xu # 作者，可选
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
-- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
+- img: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
   author: Evan Xu
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
-- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+- img: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
   author: Evan Xu
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
 ```
 ::: -->
 
@@ -103,13 +103,13 @@ pageClass: vdoing-index-class
 ```yaml
 - name: 麋鹿鲁哟
   desc: 大道至简，知易行难
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: https://www.cnblogs.com/miluluyo/ # 可选
   bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: '#6854A1' # 可选，默认var(--textColor)
 - name: XAOXUU
   desc: '#IOS #Volantis主题作者'
-  avatar: https://testingcf.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
   link: https://xaoxuu.com
   bgColor: '#718971'
   textColor: '#fff'
@@ -124,24 +124,24 @@ pageClass: vdoing-index-class
 
 ::: cardImgList
 ```yaml
-- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
+- img: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200529162253.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容 # 描述，可选
   author: Evan Xu # 作者，可选
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
-- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg # 头像，可选
+- img: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100256.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
   author: Evan Xu
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
-- img: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+- img: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200530100257.jpg
   link: https://xugaoyi.com/
   name: 标题
   desc: 描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容
   author: Evan Xu
-  avatar: https://testingcf.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
 ```
 ::: -->
 

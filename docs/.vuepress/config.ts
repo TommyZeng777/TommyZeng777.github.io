@@ -102,9 +102,9 @@
  
      // 背景图片,优先级高于index.md里的,所以设置了会直接显示这里的背景图片,不过这里的背景是整个网页的背景
      // bodyBgImg: [
-     //   'https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202204021825519.jpg',
-     //   'https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202204051631118.jpg',
-     //   'https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202204021047472.jpg'
+     //   'https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202204021825519.jpg',
+     //   'https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202204051631118.jpg',
+     //   'https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202204021047472.jpg'
      // ],
      // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
      // 这里 "[]" 是数组array的意思
@@ -146,7 +146,7 @@
  
      // 博主信息 (显示在首页侧边栏)
      blogger: {
-       avatar: 'https://testingcf.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
+       avatar: 'https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
        name: 'Tommy',
        slogan: '喜迎二十大，奋进新征程',
      },
