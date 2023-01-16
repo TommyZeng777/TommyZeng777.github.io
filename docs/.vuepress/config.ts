@@ -336,7 +336,9 @@
      [
        "md-enhance",
        {
-        //  enableAll: true,
+        //  enableAll: true,按需开即可
+         // 操作指导文档：https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/code-tabs.html#%E6%BC%94%E7%A4%BA
+         mathjax: true,
          mermaid: true,
          // 配置选项
        },
