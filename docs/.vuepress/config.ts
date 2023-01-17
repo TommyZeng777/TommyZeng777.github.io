@@ -148,7 +148,7 @@
      blogger: {
        avatar: 'https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
        name: 'Tommy',
-       slogan: '喜迎二十大，奋进新征程',
+       slogan: '喜迎2023，决战2035',
      },
  
      // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -338,9 +338,12 @@
        {
         //  enableAll: true,按需开即可
          // 操作指导文档：https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/code-tabs.html#%E6%BC%94%E7%A4%BA
-         mathjax: true,
+         tex: true,
          mermaid: true,
-         // 配置选项
+         mark: true,
+         sub: true,// 启用下角标功能
+         sup: true,// 启用上角标
+         
        },
      ],
  
