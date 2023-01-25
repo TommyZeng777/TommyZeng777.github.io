@@ -49,7 +49,7 @@ pageClass: vdoing-index-class
   bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: '#6854A1' # 可选，默认var(--textColor)
 - name: 考研专栏
-  desc: 小胖读研去
+  desc: 努力读研去
   # avatar: https://gcore.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
   link: /pages/82ac8b/
   bgColor: '#718971'
