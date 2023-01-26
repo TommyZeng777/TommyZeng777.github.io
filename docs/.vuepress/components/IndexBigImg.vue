@@ -476,8 +476,8 @@ function nextAllTipElement(elem) {
 .vdoing-index-class .home-wrapper .banner {
   margin-top: 0 !important;
   height: 100vh;
-  /* background-attachment: fixed !important; */
-  
+  /* background-attachment: fixed !important; 
+  filter: brightness(60%);*/
 }
 /* 图片中间的签名和标题位置 
 .banner-conent {

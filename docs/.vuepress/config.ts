@@ -49,15 +49,20 @@
      nav: [
        
        { text: '🛖首页', link: '/', },  
-      //  { text: '🧭专栏', link: '/Column/',  },  
+      //  { text: '🧭📚专栏', link: '/Column/',  },  
        
  
        {
-         text: '📚分类',
+         text: '🧭专栏',
          link: '/categories/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
          items: [
-          { text: '学历提升', link: '/pages/82ac8b/' },
+          { text: '考研学习', link: '/pages/82ac8b/' },
           { text: '英语学习', link: '/pages/77350f/' },
+          { text: '考公学习', link: '/pages/88deba/' },
+          { text: '斗资博弈', link: '/pages/54a500/' },
+          { text: '随笔', link: '/categories/?category=随笔' },
+          
+          
         ]
         
        },

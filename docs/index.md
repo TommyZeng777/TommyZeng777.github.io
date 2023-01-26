@@ -9,7 +9,8 @@ tagline: 功崇惟志，业广惟勤
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301100635616.jpg"
+# bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301100635616.jpg"
+bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301261526558.jpg"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
