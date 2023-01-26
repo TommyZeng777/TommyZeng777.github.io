@@ -1,11 +1,11 @@
 ---
-home: true  # 协商true就可以基于这个生成首页
+home: true  # 写上true就可以基于这个生成首页
 reading-progress: false
 # heroImage: /img/Logov17.png
 #         Internationale
 heroText: Internationale
 # tagline: 心齐方可成龙
-tagline: 每天进步一点
+tagline: 功崇惟志，业广惟勤
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/
@@ -68,6 +68,10 @@ pageClass: vdoing-index-class
   textColor: '#A05F2C'
 ```
 :::
+
+
+
+
 
 <!-- ::: cardImgList
 ```yaml
