@@ -219,7 +219,13 @@ body .vuepress-plugin-demo-block__wrapper
   margin-right: 10px;
   }
 
-
+.post-list .post .excerpt-wrapper .excerpt img{
+  border-radius: 4pt;
+  }
+.theme-vdoing-content:not(.custom) img{
+  border-radius: 6pt;
+  // max-width: 80%;
+  }
 
 // 隐藏标题旁的图片
 .theme-vdoing-wrapper h1 img{
@@ -485,7 +491,10 @@ div.theme-vdoing-wrapper{
   .home-wrapper .banner .banner-conent .hero{
     margin-top:1.5rem !important;
     }
-
+  .page >*{
+    border-radius: 4pt !important;
+    }
+  
   //文本上下间距
   p{
     margin-top:0.3em;
@@ -658,6 +667,16 @@ div.theme-vdoing-wrapper{
 
 
 
+@media only screen and (max-width: 419px) {
+.theme-vdoing-content div[class*="language-"]{
+    margin-left:0rem !important;
+    margin-right:0rem !important;
+  }
+  div[class*="language-"].line-numbers-mode pre{
+    padding-left:2.5rem !important;
+  }
+}
+
 
 
 
@@ -684,7 +703,7 @@ div.theme-vdoing-wrapper{
     margin-top: 0.4rem ;
     margin-bottom: 1rem !important; 
    }
-
+ 
 // 专栏背景隐藏套件
   .home-wrapper .main-wrapper .main-left .theme-vdoing-content{
     padding-left: 0px !important;
@@ -965,7 +984,10 @@ div.theme-vdoing-wrapper{
     margin-top:0.5em;
     margin-bottom:0.6em;
   }
-
+  .custom-block.tip, .custom-block.warning, .custom-block.danger, .custom-block.note{
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    }
   //序列文本的边距
   ul, ol{
     padding-left 1em;
@@ -987,7 +1009,7 @@ div.theme-vdoing-wrapper{
     font-size: 2.6em !important;
     }
   .home-wrapper .banner .banner-conent .hero .description{
-    font-size: 2.6em !important;
+    font-size: 2.2em !important;
     }
   .banner-arrow{
     margin-top: 40vh !important;
@@ -1037,7 +1059,7 @@ div.theme-vdoing-wrapper{
   //   }
   
   .page >*{
-    border-radius: 10px !important;
+    border-radius: 8pt !important;
     }
   .theme-vdoing-wrapper {
     border-radius: 0px !important;
@@ -1134,7 +1156,7 @@ div.theme-vdoing-wrapper{
     padding-bottom: 16px !important;
     }
   .post-list .post .title-wrapper h2 a{ //大标题字体优化
-    font-size:20pt;
+    font-size:17pt;
     font-weight: 500 !important;
   }
   .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{
@@ -1305,7 +1327,7 @@ div.theme-vdoing-wrapper{
     padding-bottom: 8px !important;
     }
   .post-list .post .title-wrapper h2 a{ //大标题字体优化
-    font-size:18pt;
+    font-size:16pt;
     font-weight: 600 !important;
   }
   .post-list .post .title-wrapper .article-info > a, .post-list .post .title-wrapper .article-info > span{

@@ -351,6 +351,7 @@
          mark: true,
          sub: true,// 启用下角标功能
          sup: true,// 启用上角标
+         tasklist: true,
          
        },
      ],
