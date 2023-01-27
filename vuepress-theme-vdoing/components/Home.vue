@@ -468,7 +468,7 @@ export default {
     & + .main-wrapper
       margin-top: ($navbarHeight + 0.9rem)
   .main-wrapper
-    margin-top 2rem
+    margin-top 0rem
     .main-left
       .card-box
         margin-bottom 2rem

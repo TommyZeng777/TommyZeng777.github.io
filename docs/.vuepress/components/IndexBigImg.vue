@@ -182,58 +182,58 @@ export default {
       }
     },
     // 背景色随时间变化
-    bgTimeColor(bgTimeColorArray) {
-      var hours = new Date().getHours();
-      var minutes = new Date().getMinutes();
-      var seconds = new Date().getSeconds();
-      hours = hours < 10 ? "0" + hours : hours;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      let div = document.createElement("div");
-      div.className = "banner-color";
-      if (hours >= 6 && hours < 11) {
-        div.style.backgroundColor = bgTimeColorArray[0];
-        addTip(
-          `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 12 && hours <= 16) {
-        div.style.backgroundColor = bgTimeColorArray[0];
-        addTip(
-          `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 16 && hours <= 19) {
-        div.style.backgroundColor = bgTimeColorArray[1];
-        addTip(
-          `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 19 && hours < 24) {
-        div.style.backgroundColor = bgTimeColorArray[2];
-        addTip(
-          `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
-          "info",
-          50,
-          4000
-        );
-      } else if (hours >= 0 && hours < 6) {
-        div.style.backgroundColor = bgTimeColorArray[3];
-        addTip(
-          `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
-          "info",
-          50,
-          4000
-        );
-      }
-      document.getElementsByClassName(banner)[0].parentNode.append(div);
-    },
+    // bgTimeColor(bgTimeColorArray) {
+    //   var hours = new Date().getHours();
+    //   var minutes = new Date().getMinutes();
+    //   var seconds = new Date().getSeconds();
+    //   hours = hours < 10 ? "0" + hours : hours;
+    //   minutes = minutes < 10 ? "0" + minutes : minutes;
+    //   seconds = seconds < 10 ? "0" + seconds : seconds;
+    //   let div = document.createElement("div");
+    //   div.className = "banner-color";
+    //   if (hours >= 6 && hours < 11) {
+    //     div.style.backgroundColor = bgTimeColorArray[0];
+    //     addTip(
+    //       `早上好呀~~，现在是 ${hours}:${minutes}:${seconds}，吃早餐了吗？😊🤭`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 12 && hours <= 16) {
+    //     div.style.backgroundColor = bgTimeColorArray[0];
+    //     addTip(
+    //       `下午好呀~~，现在是 ${hours}:${minutes}:${seconds}，繁忙的下午也要适当休息哦🥤🏀~~`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 16 && hours <= 19) {
+    //     div.style.backgroundColor = bgTimeColorArray[1];
+    //     addTip(
+    //       `到黄昏了~~，现在是 ${hours}:${minutes}:${seconds}，该准备吃饭啦🥗🍖~~`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 19 && hours < 24) {
+    //     div.style.backgroundColor = bgTimeColorArray[2];
+    //     addTip(
+    //       `晚上好呀~~，现在是 ${hours}:${minutes}:${seconds}，该准备洗漱睡觉啦🥱😪~~`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   } else if (hours >= 0 && hours < 6) {
+    //     div.style.backgroundColor = bgTimeColorArray[3];
+    //     addTip(
+    //       `别再熬夜了~~，现在是 ${hours}:${minutes}:${seconds}，早点睡吧，让我们一起欣赏早上的太阳~~😇🛏`,
+    //       "info",
+    //       50,
+    //       4000
+    //     );
+    //   }
+    //   document.getElementsByClassName(banner)[0].parentNode.append(div);
+    // },
     // 字体淡入淡出
     textFadeInAndOut(
       desc,
@@ -406,70 +406,71 @@ export default {
  * startHeight：第一个弹窗的高度，默认 50
  * dieTime：弹窗消失时间（毫秒），默认 3000 毫秒
  */
-function addTip(content, type, startHeight = 50, dieTime = 3000) {
-  var tip = document.querySelectorAll(".index-tip");
-  var time = new Date().getTime();
-  // 获取最后消息提示元素的高度
-  var top = tip.length == 0 ? 0 : tip[tip.length - 1].getAttribute("data-top");
-  // 如果产生两个以上的消息提示，则出现在上一个提示的下面，即高度添加，否则默认 50
-  var lastTop =
-    parseInt(top) +
-    (tip.length != 0 ? tip[tip.length - 1].offsetHeight + 17 : startHeight);
+// function addTip(content, type, startHeight = 50, dieTime = 3000) {
+//   var tip = document.querySelectorAll(".index-tip");
+//   var time = new Date().getTime();
+//   // 获取最后消息提示元素的高度
+//   var top = tip.length == 0 ? 0 : tip[tip.length - 1].getAttribute("data-top");
+//   // 如果产生两个以上的消息提示，则出现在上一个提示的下面，即高度添加，否则默认 50
+//   var lastTop =
+//     parseInt(top) +
+//     (tip.length != 0 ? tip[tip.length - 1].offsetHeight + 17 : startHeight);
 
-  let div = document.createElement("div");
-  div.className = `index-tip tip-${type} ${time}`;
-  div.style.top = parseInt(top) + "px";
-  div.setAttribute("data-top", lastTop);
-  if (type == "info" || type == 1) {
-    div.innerHTML = `<i class="iconfont icon-info icon"></i><p class="tip-info-content">${content}</p>`;
-  } else if (type == "success" || type == 2) {
-    div.innerHTML = `<i class="iconfont icon-dagouyouquan icon"></i><p class="tip-success-content">${content}</p>`;
-  } else if (type == "danger" || type == 3) {
-    div.innerHTML = `<i class="iconfont icon-cuowu icon"></i><p class="tip-danger-content">${content}</p>`;
-  } else if (type == "warning" || type == 4) {
-    div.innerHTML = `<i class="iconfont icon-gantanhao icon"></i><p class="tip-warning-content">${content}</p>`;
-  }
-  document.body.appendChild(div);
+//   let div = document.createElement("div");
+//   div.className = `index-tip tip-${type} ${time}`;
+//   div.style.top = parseInt(top) + "px";
+//   div.setAttribute("data-top", lastTop);
+//   if (type == "info" || type == 1) {
+//     div.innerHTML = `<i class="iconfont icon-info icon"></i><p class="tip-info-content">${content}</p>`;
+//   } else if (type == "success" || type == 2) {
+//     div.innerHTML = `<i class="iconfont icon-dagouyouquan icon"></i><p class="tip-success-content">${content}</p>`;
+//   } else if (type == "danger" || type == 3) {
+//     div.innerHTML = `<i class="iconfont icon-cuowu icon"></i><p class="tip-danger-content">${content}</p>`;
+//   } else if (type == "warning" || type == 4) {
+//     div.innerHTML = `<i class="iconfont icon-gantanhao icon"></i><p class="tip-warning-content">${content}</p>`;
+//   }
+//   document.body.appendChild(div);
 
-  let timeTip = document.getElementsByClassName(time)[0];
-  setTimeout(() => {
-    timeTip.style.top = parseInt(lastTop) + "px";
-    timeTip.style.opacity = "1";
-  }, 10);
+//   let timeTip = document.getElementsByClassName(time)[0];
+//   setTimeout(() => {
+//     timeTip.style.top = parseInt(lastTop) + "px";
+//     timeTip.style.opacity = "1";
+//   }, 10);
 
-  // 消息提示 dieTime 秒后隐藏并被删除
-  setTimeout(() => {
-    timeTip.style.top = "0px";
-    timeTip.style.opacity = "0";
+//   // 消息提示 dieTime 秒后隐藏并被删除
+//   setTimeout(() => {
+//     timeTip.style.top = "0px";
+//     timeTip.style.opacity = "0";
 
-    // 下面的所有元素回到各自曾经的出发点
-    var allTipElement = nextAllTipElement(timeTip);
-    for (let i = 0; i < allTipElement.length; i++) {
-      var next = allTipElement[i];
-      var top =
-        parseInt(next.getAttribute("data-top")) - next.offsetHeight - 17;
-      next.setAttribute("data-top", top);
-      next.style.top = top + "px";
-    }
-    setTimeout(() => {
-      timeTip.remove();
-    }, 500);
-  }, dieTime);
-}
+//     // 下面的所有元素回到各自曾经的出发点
+//     var allTipElement = nextAllTipElement(timeTip);
+//     for (let i = 0; i < allTipElement.length; i++) {
+//       var next = allTipElement[i];
+//       var top =
+//         parseInt(next.getAttribute("data-top")) - next.offsetHeight - 17;
+//       next.setAttribute("data-top", top);
+//       next.style.top = top + "px";
+//     }
+//     setTimeout(() => {
+//       timeTip.remove();
+//     }, 500);
+//   }, dieTime);
+// }
 /**
  * 获取后面的兄弟元素
  */
-function nextAllTipElement(elem) {
-  var r = [];
-  var n = elem;
-  for (; n; n = n.nextSibling) {
-    if (n.nodeType === 1 && n !== elem) {
-      r.push(n);
-    }
-  }
-  return r;
-}
+// function nextAllTipElement(elem) {
+//   var r = [];
+//   var n = elem;
+//   for (; n; n = n.nextSibling) {
+//     if (n.nodeType === 1 && n !== elem) {
+//       r.push(n);
+//     }
+//   }
+//   return r;
+// }
 </script>
+
 
 <style>
 /* 图片大小 */

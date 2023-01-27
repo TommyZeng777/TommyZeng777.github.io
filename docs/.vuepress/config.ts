@@ -11,6 +11,7 @@
  import htmlModules from './config/htmlModules' // 自定义插入的html块
  
  
+ 
  export default defineConfig4CustomTheme<VdoingThemeConfig>({
   //  theme: 'vdoing', // 使用npm主题包
    theme: resolve('vuepress-theme-vdoing'), // 使用本地主题包
@@ -24,7 +25,8 @@
    },
    // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
  
- 
+   
+
    // 主题配置
    themeConfig: {
      // 首页配置，自定义VUE插件
@@ -222,7 +224,7 @@
      // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
    ],
  
- 
+   
    // 插件配置
    plugins: <UserPlugins>[
  
