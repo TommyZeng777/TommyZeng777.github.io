@@ -78,7 +78,9 @@
          link: '/pages/9d57fc/',
          items: [
            { text: '关于', link: '/pages/1b697e/' },
-           { text: '关于本站', link: '/pages/f97811/'},
+           { text: '建站分享', link: '/pages/f97811/' },
+           { text: 'Hexo教程', link: '/pages/31689e/' },
+           
          ]
        },
  
