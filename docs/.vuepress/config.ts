@@ -87,7 +87,7 @@
  
      // 侧边栏配置
      sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-     logo: '/img/无底logo.svg', // 导航栏logo
+     logo: 'https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301271349720.svg', // 导航栏logo
      repo: 'TommyZeng777/TommyZeng777.github.io', // 导航栏右侧生成Github链接
      searchMaxSuggestions: 10, // 搜索结果显示最大数
      lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -152,7 +152,7 @@
        link: 'https://github.com/TommyZeng777', // 可选的
      },
  
-     // 博主信息 (显示在首页侧边栏)
+     // 博主信息 (头像、座右铭、显示在首页侧边栏)
      blogger: {
        avatar: 'https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
        name: 'Tommy',
@@ -176,7 +176,8 @@
          {
            iconClass: 'icon-bilibili',
            title: 'Bilibili',
-           link: 'https://space.bilibili.com/432754341',
+           link: 'https://space.bilibili.com',
+          //  /432754341
          },
        ],
      },
@@ -204,7 +205,7 @@
    // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
    head: [
      ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],
-     ['link', { rel: 'icon', href: '/img/Logov17.png' }], //favicons，资源放在public文件夹
+     ['link', { rel: 'icon', href: 'https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301271353505.png' }], //favicons，资源放在public文件夹
      [
        'meta',
        {
