@@ -38,18 +38,18 @@ readingShow: false # 隐藏阅读进度条用的
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: detailed
 # simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
-# pageClass: vdoing-index-class
+pageClass: vdoing-index-class
 ---
 
 ::: cardList 1   
 ```yaml
-- name: 英语专栏
-  desc: 知己知彼，再战未来
+- name: 英语学习专栏
+  desc: 知己知彼，迎战未来
   # avatar: https://gcore.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: /pages/77350f/ # 可选
   bgColor: '#CBEAFA' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: '#6854A1' # 可选，默认var(--textColor)
-- name: 考研专栏
+- name: 考研学习专栏
   desc: 努力读研去
   # avatar: https://gcore.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
   link: /pages/82ac8b/
@@ -61,7 +61,7 @@ postList: detailed
 #   link: /pages/56ab3e/
 #   bgColor: '#718971'
 #   textColor: '#fff'
-- name: 关于本站
+- name: 建站分享专栏
   desc: 讲讲搞网站的曲折之路
   # avatar: https://reinness.com/avatar.png
   link: /pages/9d57fc/
@@ -154,6 +154,6 @@ postList: detailed
 <!-- 小熊猫 -->
 <!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
 
-<!-- <ClientOnly>
+<ClientOnly>
   <IndexBigImg />
-</ClientOnly> -->
+</ClientOnly>
