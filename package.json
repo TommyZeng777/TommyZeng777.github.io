@@ -34,6 +34,7 @@
     "@renovamen/vuepress-plugin-mermaid": "^0.3.0",
     "vue-tabs-component": "^1.5.0",
     "vuepress-plugin-element-ui": "^1.1.0",
+    "vuepress-plugin-img-lazy": "^1.0.4",
     "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-plugin-tabs": "^0.3.0"
   }
