@@ -5,7 +5,7 @@ reading-progress: false
 #         Internationale
 heroText: Internationale
 # tagline: 心齐方可成龙
-tagline: 功崇惟志，业广惟勤
+tagline: 功崇惟志  业广惟勤
 # 道阻且长，互励共行
 # actionText: 立刻进入 →
 # actionLink: /web/

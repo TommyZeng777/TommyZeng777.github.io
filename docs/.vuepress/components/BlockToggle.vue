@@ -193,7 +193,7 @@ div[class*="language-"]::before {
   /* 上下边距 */
   top: 0.44rem;    /* 上下边距 */
   left: 5rem;
-  font-size: 1em;
+  font-size: 1rem;
   color: rgba(238, 255, 255, 0.8);
   text-transform: uppercase;
   font-weight: bold;
@@ -212,7 +212,7 @@ div[class*="language-"].line-numbers-mode::after {
 .circle {
   position: absolute;
   top: 0.65rem;
-  left: 0.9rem;
+  right: 0.9rem;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -225,7 +225,8 @@ div[class*="language-"].line-numbers-mode::after {
 .code-copy {
   position: absolute;
   top: 0.47rem;
-  right: 0.8rem;
+  right: 0.8rem; 
+  padding-left:0.5rem;
   fill: rgba(238, 255, 255, 0.8);
   opacity: 1;
 }
