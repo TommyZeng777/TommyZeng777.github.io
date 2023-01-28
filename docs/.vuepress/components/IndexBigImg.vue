@@ -510,8 +510,8 @@ function nextAllTipElement(elem) {
 .vdoing-index-class .home-wrapper .banner {
   margin-top: 0 !important;
   height: 100vh;
-  background-attachment: fixed !important; 
-  /* filter: brightness(60%);*/
+  /*background-attachment: fixed !important; 
+   filter: brightness(60%);*/
 }
 
 /* 下面是配合 js 用的 class 样式 

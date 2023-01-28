@@ -212,7 +212,7 @@ div[class*="language-"].line-numbers-mode::after {
 .circle {
   position: absolute;
   top: 0.65rem;
-  right: 0.9rem;
+  left: 0.9rem;
   width: 12px;
   height: 12px;
   border-radius: 50%;
