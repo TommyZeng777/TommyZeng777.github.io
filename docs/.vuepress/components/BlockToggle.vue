@@ -224,7 +224,7 @@ div[class*="language-"].line-numbers-mode::after {
 /* 代码块一键复制图标 */
 .code-copy {
   position: absolute;
-  top: 0.47rem;
+  top: 0.5rem;
   right: 0.8rem; 
   padding-left:0.5rem;
   fill: rgba(238, 255, 255, 0.8);
