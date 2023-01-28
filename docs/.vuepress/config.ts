@@ -240,7 +240,7 @@
          hm: baiduCode,
        },
      ],
- 
+     
      // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
      'fulltext-search',
  
@@ -271,16 +271,34 @@
      //   ],
      // },
  
+    //  [
+    //    'one-click-copy', // 代码块复制按钮
+    //    {
+    //      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+    //      copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+    //      duration: 1000, // prompt message display time.
+    //      isMobile: false , // whether to display on the mobile side, default: false.
+    //    },
+    //  ],
+
      [
-       'one-click-copy', // 代码块复制按钮
+      require('./plugins/vuepress-plugin-one-click-copy/index.js'), // 代码块复制按钮
        {
          copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
          copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
          duration: 1000, // prompt message display time.
-         isMobile: true , // whether to display on the mobile side, default: false.
+        //  isMobile: false , // whether to display on the mobile side, default: false.
        },
      ],
- 
+
+    //   ['@xiaopanda/vuepress-plugin-code-copy', {
+    //   buttonStaticIcon: true,
+    //   // buttonIconTitle: Copy,
+    //   // buttonAlign: top,
+    //   // buttonColor: String
+    //  }
+    //   ],
+     
      [
        'demo-block', // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
        {
