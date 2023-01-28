@@ -189,9 +189,9 @@ li .closed {
 /* 代码块的语言 */
 div[class*="language-"]::before {
   position: absolute;
-  z-index: 3;
-  /* 左右边距 */
-  top: 0.44em;    
+  z-index: 0;
+  /* 上下边距 */
+  top: 0.44rem;    /* 上下边距 */
   left: 5rem;
   font-size: 1em;
   color: rgba(238, 255, 255, 0.8);
@@ -211,7 +211,7 @@ div[class*="language-"].line-numbers-mode::after {
 /* 代码块的三个圆圈颜色 */
 .circle {
   position: absolute;
-  top: 0.8em;
+  top: 0.65rem;
   left: 0.9rem;
   width: 12px;
   height: 12px;
@@ -224,13 +224,13 @@ div[class*="language-"].line-numbers-mode::after {
 /* 代码块一键复制图标 */
 .code-copy {
   position: absolute;
-  top: 0.7rem;
-  right: 0.9rem;
+  top: 0.47rem;
+  right: 0.8rem;
   fill: rgba(238, 255, 255, 0.8);
   opacity: 1;
 }
 .code-copy svg {
-  margin: 0;
+  padding-right: 0.5pt;  
 }
 
 /* 如果你浅色模式的代码块背景色是浅灰色，则取消下面的注释使代码生效，如果是黑色，则注释下面的三段代码（我注释了，因为是黑色背景） */

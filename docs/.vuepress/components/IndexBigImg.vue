@@ -630,10 +630,10 @@ export default {
   font-size: 14px;
 }
 
-.icon {
-  margin-right: 10px;
-  line-height: 17px;
-}
+/*.icon {
+  margin-right: 1pt ;
+  line-height: 17pt;
+}*/
 
 .tip-success {
   color: #67c23a;

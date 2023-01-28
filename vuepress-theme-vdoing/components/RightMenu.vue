@@ -63,7 +63,7 @@ export default {
   font-size 0.8rem
   .right-menu-margin
     margin-top: ($navbarHeight + 1rem)
-    border-radius 3px
+    border-radius 5pt
     overflow hidden
   .right-menu-title
     padding 10px 15px 0 15px
