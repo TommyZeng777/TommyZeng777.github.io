@@ -14,7 +14,6 @@
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.9.7",
     "@vuepress/plugin-last-updated": "^1.9.7",
-    "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
