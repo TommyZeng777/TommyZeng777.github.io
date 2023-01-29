@@ -32,7 +32,7 @@ export default {
         "/": {
           // message: "Go back to the last reading.",
           // buttonText: "Go to",
-          message: "检测到您上一次阅读的位置，是否移至该位置？",
+          message: "是否恢复上一次的阅读？",
           sureButtonText: "确定",
           cancelButtonText: "取消",
         },

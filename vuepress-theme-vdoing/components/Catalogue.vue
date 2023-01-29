@@ -21,7 +21,7 @@
               </router-link>
             </dt>
           </dl>
-          <dl v-else-if="type(item) === 'object'" :key="index">
+          <dl v-else-if="type(item) === 'object'" :key="index" >
             <!-- 一级目录 -->
             <dt :id="(anchorText = item.title)">
               <a :href="`#${anchorText}`" class="header-anchor">#</a>
