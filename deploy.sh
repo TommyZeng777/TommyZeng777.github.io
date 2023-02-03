@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-echo 'tommyzeng.com' > CNAME
+# echo 'tommyzeng.com' > CNAME
 
 # git init
 # git add .
