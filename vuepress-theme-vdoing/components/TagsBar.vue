@@ -80,8 +80,8 @@ export default {
       margin-right 0.3rem
   .tags
     text-align justify
-    padding 0.8rem 0.6rem 0.5rem 0.5rem
-    margin 0 -0.9rem -0.5rem -0.5rem
+    padding 0rem 0.6rem 0.5rem 0.5rem
+    margin 0.5rem -0.9rem 0rem -0.5rem
     a
       opacity 0.8
       display inline-block
