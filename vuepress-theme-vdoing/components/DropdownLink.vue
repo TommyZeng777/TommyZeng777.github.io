@@ -216,10 +216,10 @@ export default {
       right 0
       background-color var(--mainBg)
       padding 0.6rem 0
-      border 1px solid var(--borderColor)
+      /*border 1px solid var(--borderColor)*/
       border-bottom-color var(--borderColor)
       text-align left
-      border-radius 0.25rem
+      border-radius 6pt
       white-space nowrap
       margin 0
   .nav-item .dropdown-title a
