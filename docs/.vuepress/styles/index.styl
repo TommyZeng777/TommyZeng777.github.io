@@ -242,9 +242,7 @@ body .vuepress-plugin-demo-block__wrapper
 //   font-size: 0.5rem !important;
 //   }
 
-.nav-dropdown{
-  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.153) ;
-  }
+
 
 // h1增加底下滑线
 .page h1{
@@ -502,8 +500,14 @@ div.theme-vdoing-wrapper{
 //   margin-right: 0px !important;
 //   }
 
+@media only screen and (max-width: 719px) {}
 
-
+.sidebar{
+  // box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.171) !important;
+  border-right: 2pt solid rgb(235, 235, 235)!important;
+  // border-bottom-right-radius: 10pt;
+   
+  }
 
 @media only screen and (min-width: 719px) {
   .home-wrapper .banner .banner-conent .hero{
@@ -527,7 +531,9 @@ div.theme-vdoing-wrapper{
     
   //   }
  
-    
+  .nav-dropdown{
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.153) ;
+  } 
   
 
   //文本上下间距

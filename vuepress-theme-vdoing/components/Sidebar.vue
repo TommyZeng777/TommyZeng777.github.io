@@ -58,7 +58,7 @@ export default {
     display inline-block
   .nav-links
     display none
-    border-bottom 1px solid var(--borderColor)
+    border-bottom 0px solid var(--borderColor)
     padding 0.5rem 0 0.75rem 0
     a
       font-weight 600
@@ -78,6 +78,7 @@ export default {
   .blogger
     display none
     border-bottom 1px solid var(--borderColor)
+      
     img
       width 60px
       height 60px
