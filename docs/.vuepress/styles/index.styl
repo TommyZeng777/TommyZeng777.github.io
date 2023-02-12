@@ -141,6 +141,10 @@ body .vuepress-plugin-demo-block__wrapper
     overflow-x: auto!important;
   }
 
+// .gt-container .gt-comment-reply .gt-comment-like{
+//   top:-2pt !important;
+//   right:-4pt !important;
+//   }
 
 // 调整代码框上下边距用的, 默认上下边距太大
 .theme-vdoing-content pre[class*="language-"]{
@@ -242,7 +246,9 @@ body .vuepress-plugin-demo-block__wrapper
 //   font-size: 0.5rem !important;
 //   }
 
-
+.gt-container .gt-comment-admin .gt-comment-content, .gt-container .gt-comment-content{
+  border-radius: 4pt;
+  }
 
 // h1增加底下滑线
 .page h1{
@@ -508,6 +514,15 @@ div.theme-vdoing-wrapper{
   // border-bottom-right-radius: 10pt;
    
   }
+}
+.article-list{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  }
+
+div#vuepress-plugin-comment{
+  padding-left: 1rem !important;
+  padding-right: 1rem !important; 
 }
 
 @media only screen and (min-width: 719px) {
@@ -1085,7 +1100,7 @@ div.theme-vdoing-wrapper{
   //页边距
   .home-wrapper .main-wrapper,
   .main-wrapper,
-  .page >*{
+  {
     margin-left: 12pt !important;
     margin-right: 12pt !important;
     }
