@@ -541,4 +541,7 @@ export default {
   .main-wrapper
     @media (max-width 719px)
       margin-top -1px
+
+
+
 </style>

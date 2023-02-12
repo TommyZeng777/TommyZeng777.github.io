@@ -219,7 +219,7 @@ export default {
       /*border 1px solid var(--borderColor)*/
       border-bottom-color var(--borderColor)
       text-align left
-      border-radius 6pt
+      border-radius 5pt
       white-space nowrap
       margin 0
   .nav-item .dropdown-title a

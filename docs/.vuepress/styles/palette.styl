@@ -34,6 +34,16 @@ $bannerTextColor = rgb(255, 255, 255)// 首页banner区(博客标题)文本颜�
   // 代码块浅色主题
   --codeBg: #f7f7f7
   --codeColor: #24292e
+
+  .page
+    background-color: rgb(255, 255, 255) !important
+  .footer
+    background-color: rgb(255, 255, 255) 
+
+  .no-sidebar .footer
+    background-color: #f4f4f4
+
+
   //codeThemeLight()
   // 行高亮颜色，和代码块浅色主题一起使用，一起注释
   //div[class*="language-"]
@@ -79,7 +89,17 @@ $bannerTextColor = rgb(255, 255, 255)// 首页banner区(博客标题)文本颜�
 //   // codeThemeDark()
 
 // // 深色模式
-// .theme-mode-dark
+.theme-mode-dark
+  
+  .page
+    background-color: rgba(30,30,34,1) !important
+  .footer
+    background-color: rgba(30,30,34,1) 
+  .no-sidebar .footer
+    background-color: rgb(39, 39, 43) 
+
+  // div[class*="home-wrapper"].footer
+  //     background-color: rgb(39, 39, 43) !important;
 //   --bodyBg: rgb(39,39,43)
 //   --mainBg: rgba(30,30,34,1)
 //   --sidebarBg: rgba(30,30,34,.8)
@@ -92,7 +112,13 @@ $bannerTextColor = rgb(255, 255, 255)// 首页banner区(博客标题)文本颜�
 //   codeThemeDark()
 
 // // 阅读模式
-// .theme-mode-read
+.theme-mode-read
+  .page
+    background-color: rgba(245,245,213,1) !important
+  .footer
+    background-color: rgba(245,245,213,1)
+  .no-sidebar .footer
+    background-color: rgb(240,240,208)
 //   --bodyBg: rgb(240,240,208)
 //   --mainBg: rgba(245,245,213,1)
 //   --sidebarBg: rgba(245,245,213,.8)

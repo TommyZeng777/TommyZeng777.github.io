@@ -76,7 +76,7 @@
       //  🔖🕒📘🧭🛖 可选图标(其实是emoji
        {
          text: '关于',
-         link: '/pages/9d57fc/',
+         link: '/pages/1069f2/',
          items: [
            { text: '关于', link: '/pages/1b697e/' },
            { text: '建站分享', link: '/pages/f97811/' },
