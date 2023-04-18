@@ -159,7 +159,7 @@
      blogger: {
        avatar: 'https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
        name: 'Tommy',
-       slogan: '喜迎2023，决战2035',
+       slogan: '革命理想高于天，满腔热血只向前',
      },
  
      // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
