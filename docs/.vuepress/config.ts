@@ -63,6 +63,7 @@
           { text: '英语学习', link: '/pages/77350f/' },
           { text: '考公学习', link: '/pages/88deba/' },
           { text: '斗资博弈', link: '/pages/54a500/' },
+          { text: 'IT分享', link: '/pages/ab06fd/' },
           { text: '随笔', link: '/categories/?category=随笔' },
           
           
@@ -359,9 +360,9 @@
      ],
  
      [
-       "md-enhance",
+       'md-enhance',
        {
-        //  enableAll: true,按需开即可
+        //  enableAll: true,//按需开即可
          // 操作指导文档：https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/code-tabs.html#%E6%BC%94%E7%A4%BA
          tex: true,
          mermaid: true,
@@ -369,11 +370,14 @@
          sub: true,// 启用下角标功能
          sup: true,// 启用上角标
          tasklist: true,
-         chart: true,// 启用图表
+        //  chart: true,// 启用图表
+        //  echarts: true,//启用echart图表
          
        },
      ],
- 
+
+
+
      // Mac样式代码块和可折叠代码框
      [
        {
