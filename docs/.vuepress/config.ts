@@ -20,7 +20,7 @@
      '/': {
        lang: 'zh-CN',
        title: "Tommy's Blog",
-       description: '各种内容都有，甚至有英语学习',
+       description: '一名实事求是的新青年',
      }
    },
    // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -160,7 +160,7 @@
      blogger: {
        avatar: 'https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202207142320198.jpg',
        name: 'Tommy',
-       slogan: '革命理想高于天，满腔热血只向前',
+       slogan: '实事求是',
      },
  
      // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
