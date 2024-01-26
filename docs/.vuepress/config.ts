@@ -59,11 +59,11 @@
          text: '专栏',
          link: '/categories/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
          items: [
+          { text: ' IT专题', link: '/pages/ab06fd/' },
           { text: '考研学习', link: '/pages/82ac8b/' },
           { text: '英语学习', link: '/pages/77350f/' },
           { text: '考公学习', link: '/pages/88deba/' },
           { text: '斗资博弈', link: '/pages/54a500/' },
-          { text: 'IT分享', link: '/pages/ab06fd/' },
           { text: '随笔', link: '/categories/?category=随笔' },
           
           
@@ -72,9 +72,10 @@
        },
  
        { text: 'Tags', link: '/tags/' },
-       { text: '时间轴', link: '/archives/' },
+      
        {text: '正经人',link: '/diary/'},
-      //  🔖🕒📘🧭🛖 可选图标(其实是emoji
+       //  🔖🕒📘🧭🛖 可选图标(其实是emoji
+       { text: '时光机', link: '/archives/' },
        {
          text: '关于',
          link: '/pages/1069f2/',
