@@ -44,6 +44,12 @@ pageClass: vdoing-index-class
 
 ::: cardList 1   
 ```yaml
+- name: 计算机知识研究区
+  desc: 研究编程知识和应用途径
+  # avatar: https://gcore.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
+  link: /pages/ab06fd/ # 可选
+  bgColor: '#77a6f2' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
+  textColor: '#0a111c' # 可选，默认var(--textColor)
 - name: 英语学习专栏
   desc: 知己知彼，迎战未来
   # avatar: https://gcore.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
@@ -62,12 +68,15 @@ pageClass: vdoing-index-class
 #   link: /pages/56ab3e/
 #   bgColor: '#718971'
 #   textColor: '#fff'
-- name: 建站分享专栏
-  desc: 讲讲搞网站的曲折之路
-  # avatar: https://reinness.com/avatar.png
-  link: /pages/9d57fc/
-  bgColor: '#FCDBA0'
-  textColor: '#A05F2C'
+
+# - name: 建站分享专栏
+#   desc: 讲讲搞网站的曲折之路
+#   # avatar: https://reinness.com/avatar.png
+#   link: /pages/9d57fc/
+#   bgColor: '#FCDBA0'
+#   textColor: '#A05F2C'
+
+
 ```
 :::
 
