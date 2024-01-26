@@ -11,7 +11,8 @@ tagline: 功崇惟志  业广惟勤
 # actionLink: /web/
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301100635616.jpg"
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202305170827629.jpg"
-bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202309022017141.png"
+# bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202309022017141.png"
+bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261555317.jpg)"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
