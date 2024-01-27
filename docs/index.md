@@ -10,9 +10,9 @@ tagline: 功崇惟志  业广惟勤
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301100635616.jpg"
-# bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202305170827629.jpg"
+bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202305170827629.jpg"
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202309022017141.png"
-bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401271531045.jpg"
+# bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401271531045.jpg"
 # bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261603774.jpg"
 # bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261726310.jpg"
 # bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261735355.jpg"
