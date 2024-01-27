@@ -12,7 +12,11 @@ tagline: 功崇惟志  业广惟勤
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202301100635616.jpg"
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202305170827629.jpg"
 # bannerBg: "https://gcore.jsdelivr.net/gh/TommyZeng777/picgo/img/202309022017141.png"
-bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261555317.jpg)"
+bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401271531045.jpg"
+# bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261603774.jpg"
+# bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261726310.jpg"
+# bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401261735355.jpg"
+# bannerBg: "https://cdn.jsdelivr.net/gh/TommyZeng777/picgo/img/202401262350492.jpg"
 # 默认: auto
 # 可选参数
 # auto: 自动背景, 为网格纹
@@ -49,8 +53,8 @@ pageClass: vdoing-index-class
   desc: 研究编程知识和应用途径
   # avatar: https://gcore.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
   link: /pages/ab06fd/ # 可选
-  bgColor: '#77a6f2' # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
-  textColor: '#0a111c' # 可选，默认var(--textColor)
+  bgColor: '#FCDBA0'
+  textColor: '#A05F2C'
 - name: 英语学习专栏
   desc: 知己知彼，迎战未来
   # avatar: https://gcore.jsdelivr.net/gh/xugaoyi/image_store/blog/20200122153807.jpg # 可选
